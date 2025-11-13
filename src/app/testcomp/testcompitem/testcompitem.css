@@ -1,0 +1,33 @@
+.testobj {
+
+
+
+  .testobj__item {
+    background: whitesmoke;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 4px;
+    padding: 1rem;
+
+    .testobj__label {
+    }
+    .testobj__property {
+      display: flex;
+      align-items: center;
+
+    }
+  }
+
+  .testobj__action {
+    justify-content: center;
+    button {
+      width: 4rem;
+      height: 2rem;
+    }
+  }
+
+  .header {
+    background: lightblue;
+    justify-content: center;
+  }
+}

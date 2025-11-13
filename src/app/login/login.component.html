@@ -1,6 +1,21 @@
-<p>login works!</p>
-<form [formGroup]="form" (ngSubmit)="submit()" class="login-form">
-  <input [formControlName]="'username'" class="login-form__username">
-  <input [formControlName]="'password'" type="password" class="login-form__password">
-  <button (click)="submit()"></button>
+<div class="main__form-container">
+  <h1>Login</h1>
+  @if (auth.isLoggedIn()) {
+    <h2>Bereits eingeloggt</h2>
+  } @else {
+<form class="form" [formGroup]="form" (ngSubmit)="submit()" class="login-form">
+  <div class="form-field">
+    <label for="username">Username</label>
+    <input [formControlName]="'username'" class="login-form__username">
+  </div>
+  <div class="form-field">
+    <label for="password">Passwort</label>
+    <input [formControlName]="'password'" type="password" class=" login-form__password">
+  </div>
+  <div class="form-action">
+    <button class="form-action__submit" type="submit">Login</button>
+  </div>
 </form>
+<app-testcomp></app-testcomp>
+  }
+</div>

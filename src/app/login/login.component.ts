@@ -1,25 +1,30 @@
-import { Component } from '@angular/core';
+import {Component, inject} from '@angular/core';
 import {FormControl, FormGroup, ReactiveFormsModule} from '@angular/forms';
 import {AuthService} from '../auth.service';
+import {Testcomp} from '../testcomp/testcomp';
 
 @Component({
   selector: 'app-login',
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, Testcomp],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css',
 })
 export class LoginComponent {
-  protected form!: FormGroup;
-
-  constructor(private auth: AuthService) {
-    this.form = new FormGroup({
-      username: new FormControl(),
-      password: new FormControl()
-    });
-  }
+  protected form: FormGroup = new FormGroup({
+    username: new FormControl(),
+    password: new FormControl()
+  });
+  auth: AuthService = inject(AuthService);
 
   protected submit() {
-    console.log(this.form.value.username);
-    this.auth.login(this.form.value.username, this.form.value.password).subscribe();
+    this.auth.login(this.form.value.username, this.form.value.password).subscribe({
+      next: (res:any)=>{
+        // window.location.reload();
+        this.auth.setLoggedIn(res.sessionId);
+      },
+      error: (error:any)=>{
+        console.log(error.message);
+      }
+    });
   }
 }

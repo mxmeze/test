@@ -1,0 +1,35 @@
+.main__form-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  .form-field {
+
+    label {
+      font-size: 20px;
+    }
+    input {
+      width: 400px;
+      height: 40px;
+      font-size: 20px;
+      display: flex;
+      flex-flow: column nowrap;
+    }
+  }
+
+  .form-action {
+    display: flex;
+    justify-content: center;
+
+    .form-action__submit {
+      margin-top: 20px;
+      width: 300px;
+      height: 40px;
+      font-size: 20px;
+      font-weight: bold;
+      justify-self: center;
+      justify-content: center;
+      justify-items: center;
+    }
+  }
+}
+
