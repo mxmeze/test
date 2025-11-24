@@ -1,0 +1,44 @@
+@use '../../../styles/variables' as vars;
+
+:host {
+  display: block;
+  width: 100%;
+}
+
+.stats-section {
+  padding: vars.$space-500 0; // Reduced from vars.$space-500 * 2
+  background: linear-gradient(135deg, vars.$color-primary 0%, vars.$color-primary-strong 100%);
+  color: vars.$color-text-inverse;
+}
+
+.stats-section__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: vars.$space-400; // Reduced from vars.$space-500
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 vars.$space-400;
+  
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-item__value {
+  font-size: clamp(2rem, 5vw, 3rem); // Reduced from clamp(2.5rem, 6vw, 4rem)
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: vars.$space-200;
+  color: vars.$color-text-inverse;
+}
+
+.stat-item__label {
+  font-size: 0.9rem; // Reduced from vars.$font-size-base
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}

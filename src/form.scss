@@ -1,16 +1,18 @@
-.main__form-container {
+@use './styles/variables' as vars;
+
+.form {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   .form-field {
 
     label {
-      font-size: 20px;
+      font-size: vars.$font-size-base;
     }
     input {
       width: 400px;
       height: 40px;
-      font-size: 20px;
+      font-size: vars.$font-size-base;
       display: flex;
       flex-flow: column nowrap;
     }
@@ -24,7 +26,7 @@
       margin-top: 20px;
       width: 300px;
       height: 40px;
-      font-size: 20px;
+      font-size: vars.$font-size-base;
       font-weight: bold;
       justify-self: center;
       justify-content: center;

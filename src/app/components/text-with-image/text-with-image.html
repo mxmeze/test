@@ -1,0 +1,25 @@
+<section
+  class="text-with-image"
+  [class.text-with-image--image-left]="imagePosition === 'left'"
+  [class.text-with-image--image-right]="imagePosition === 'right'"
+>
+  <div class="text-with-image__content">
+    @if (headline) {
+      <h2 class="text-with-image__headline">{{ headline }}</h2>
+    }
+    @if (text) {
+      <div class="text-with-image__text">{{ text }}</div>
+    }
+  </div>
+  @if (imageUrl) {
+    <div class="text-with-image__image-wrapper">
+      <img
+        [src]="imageUrl"
+        [alt]="imageAlt || headline"
+        class="text-with-image__image"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+  }
+</section>

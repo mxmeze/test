@@ -1,0 +1,130 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "contact": "Contact",
+    "impress": "Impress",
+    "login": "Login",
+    "register": "Register",
+    "toggle": "Toggle navigation"
+  },
+  "hero": {
+    "kicker": "Innovation Starts Here",
+    "headline": "Building the Future, One Innovation at a Time",
+    "mainText": "We're a fresh, agile team of innovators turning bold ideas into reality. No legacy systems, no outdated processes—just cutting-edge solutions delivered fast.",
+    "cta": "Start Your Project"
+  },
+  "valueProposition": {
+    "headline": "Why Work With Us?",
+    "subheadline": "We're not just developers—we're your innovation partners",
+    "speed": {
+      "title": "Lightning Fast",
+      "description": "From concept to deployment in weeks, not months. We move at startup speed."
+    },
+    "quality": {
+      "title": "Enterprise Quality",
+      "description": "Built to scale with clean code, best practices, and modern architecture."
+    },
+    "transparency": {
+      "title": "Full Transparency",
+      "description": "Weekly updates, open communication, and no surprises. You're always in the loop."
+    },
+    "partnership": {
+      "title": "True Partnership",
+      "description": "We invest in your success. Your goals become our goals, and we're in it for the long haul."
+    }
+  },
+  "features": {
+    "headline": "What Makes Us Different",
+    "subheadline": "Innovation, speed, and agility—the new way to build technology",
+    "rapidPrototyping": {
+      "title": "Rapid Prototyping",
+      "description": "Get from idea to working prototype in days, not months. We move fast and iterate quickly."
+    },
+    "aiSolutions": {
+      "title": "AI-Powered Solutions",
+      "description": "Leverage cutting-edge AI and machine learning to solve complex problems intelligently."
+    },
+    "modernStack": {
+      "title": "Modern Tech Stack",
+      "description": "Built with the latest technologies and frameworks for performance and scalability."
+    },
+    "agile": {
+      "title": "Agile Development",
+      "description": "Flexible, iterative approach that adapts to your needs as they evolve."
+    },
+    "innovationLab": {
+      "title": "Innovation Lab",
+      "description": "Experiment with emerging technologies to find creative solutions to your challenges."
+    },
+    "startupFriendly": {
+      "title": "Startup-Friendly",
+      "description": "Designed for startups and innovators who need results fast without breaking the bank."
+    }
+  },
+  "content": {
+    "freshPerspective": {
+      "headline": "Fresh Perspective, Bold Ideas",
+      "text": "As a new company, we're not bound by legacy systems or outdated ways of thinking. We bring fresh eyes to every challenge and aren't afraid to try new approaches. Our small, focused team means you get direct access to the people building your solution—no layers, no bureaucracy, just results."
+    },
+    "builtForInnovators": {
+      "headline": "Built for Innovators, by Innovators",
+      "text": "We understand what it's like to be a startup or innovator—you need solutions that work, fast, without the enterprise overhead. We use the latest tools and technologies, embrace experimentation, and move at the speed you need. Every project is an opportunity to push boundaries and create something remarkable."
+    }
+  },
+  "testimonials": {
+    "headline": "Early Adopters Love Us"
+  },
+  "cta": {
+    "headline": "Ready to Build Something Amazing?",
+    "subheadline": "Let's turn your innovative idea into reality. Fast, flexible, and forward-thinking.",
+    "button": "Let's Talk"
+  },
+  "footer": {
+    "tagline": "Innovation. Speed. Results. Building the future, one project at a time.",
+    "company": "Company",
+    "legal": "Legal"
+  },
+  "services": {
+    "hero": {
+      "kicker": "What We Deliver",
+      "headline": "Services for Fast-Moving Product Teams",
+      "mainText": "We combine strategy, UX, and development. Use building blocks from our component library to ship features faster.",
+      "cta": "Request a Project"
+    },
+    "intro": {
+      "headline": "Comprehensive IT Solutions",
+      "subheadline": "From concept to deployment, we've got you covered"
+    },
+    "consulting": {
+      "title": "Consulting",
+      "description": "Align stakeholders, define KPIs, and plan the rollout of your next release. Strategic guidance to help you make the right technology decisions."
+    },
+    "implementation": {
+      "title": "Implementation",
+      "description": "Component-driven development with modern frameworks, RxJS, and type-safe APIs. We build scalable solutions that grow with your business."
+    },
+    "enablement": {
+      "title": "Enablement",
+      "description": "Pair-programming, knowledge transfers, and documentation to keep teams moving. We ensure your team can maintain and extend what we build."
+    },
+    "support": {
+      "title": "Support & Maintenance",
+      "description": "Ongoing support to keep your systems running smoothly. Proactive monitoring and quick response times."
+    },
+    "promotion": {
+      "headline": "Special Offer: Launch Package",
+      "text": "Get your MVP to market faster with our comprehensive launch package. Includes rapid prototyping, core feature development, and deployment setup—all at a special introductory rate for new clients.",
+      "cta": "Learn More"
+    },
+    "whyChoose": {
+      "headline": "Why Choose Our Services?",
+      "text": "We're not just another development agency. We're your innovation partners, committed to understanding your unique challenges and delivering solutions that drive real business value. Our agile approach means you see progress weekly, not quarterly."
+    },
+    "process": {
+      "headline": "Our Process",
+      "text": "We start with discovery to understand your goals, then move quickly through design and development with regular check-ins. Every sprint delivers working software, and every release brings you closer to your vision. No surprises, just results."
+    }
+  }
+}
+

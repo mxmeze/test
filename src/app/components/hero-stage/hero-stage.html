@@ -1,0 +1,23 @@
+<section
+  class="hero-stage"
+  [class.hero-stage--full]="fullWidth"
+  [style.background-image]="backgroundImage()"
+>
+  <div class="hero-stage__content">
+    @if (kicker) {
+      <p class="hero-stage__kicker">{{ kicker }}</p>
+    }
+    <h1 class="hero-stage__headline">
+      {{ headline }}
+    </h1>
+    <p class="hero-stage__body">
+      {{ mainText }}
+    </p>
+    <app-cta-button
+      class="hero-stage__cta"
+      [label]="ctaLabel"
+      [href]="ctaHref"
+      (pressed)="onCtaPressed()"
+    ></app-cta-button>
+  </div>
+</section>

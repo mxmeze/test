@@ -1,0 +1,39 @@
+<section class="testimonials-section">
+  <div class="testimonials-section__header">
+    <h2 class="testimonials-section__headline">{{ headline }}</h2>
+  </div>
+
+  <div class="testimonials-section__grid">
+    @for (testimonial of testimonials; track testimonial.author) {
+      <article class="testimonial-card">
+        @if (testimonial.rating) {
+          <div class="testimonial-card__rating">
+            @for (star of [].constructor(testimonial.rating); track $index) {
+              <span class="testimonial-card__star">★</span>
+            }
+          </div>
+        }
+        <blockquote class="testimonial-card__text">
+          "{{ testimonial.text }}"
+        </blockquote>
+        <footer class="testimonial-card__author">
+          <strong class="testimonial-card__name">{{ testimonial.author }}</strong>
+          @if (testimonial.role || testimonial.company) {
+            <span class="testimonial-card__meta">
+              @if (testimonial.role) {
+                {{ testimonial.role }}
+              }
+              @if (testimonial.role && testimonial.company) {
+                <span> at </span>
+              }
+              @if (testimonial.company) {
+                {{ testimonial.company }}
+              }
+            </span>
+          }
+        </footer>
+      </article>
+    }
+  </div>
+</section>
+

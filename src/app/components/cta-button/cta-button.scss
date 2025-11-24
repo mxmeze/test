@@ -1,0 +1,115 @@
+@use '../../../styles/variables' as vars;
+@use '../../../styles/theme.config' as theme;
+
+:host {
+  display: inline-block;
+}
+
+a.cta-button,
+button.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: vars.$space-200;
+  min-height: 3rem;
+  padding: 0 vars.$space-400;
+  border-radius: vars.$radius-lg;
+  font-size: vars.$font-size-base;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: all 200ms ease;
+  box-sizing: border-box;
+  line-height: 1.5;
+  white-space: nowrap;
+  user-select: none;
+
+  // Primary variant (default)
+  &.cta-button--primary,
+  &:not(.cta-button--secondary):not(.cta-button--tertiary) {
+    color: vars.$color-text-inverse;
+    background: vars.$color-primary;
+    border-color: transparent;
+    box-shadow: vars.$shadow-soft;
+
+    &:hover:not(:disabled):not(.cta-button--disabled),
+    &:focus-visible:not(:disabled):not(.cta-button--disabled) {
+      background: vars.$color-primary-strong;
+      transform: translateY(-1px);
+      box-shadow: vars.$shadow-elevated;
+    }
+
+    &:active:not(:disabled):not(.cta-button--disabled) {
+      transform: translateY(0);
+      box-shadow: vars.$shadow-soft;
+    }
+
+    &:focus-visible {
+      outline: 2px solid vars.$color-text-inverse;
+      outline-offset: 2px;
+    }
+  }
+
+  // Secondary variant
+  &.cta-button--secondary {
+    color: vars.$color-primary;
+    background: vars.$color-primary-muted;
+    border-color: vars.$color-primary;
+    box-shadow: none;
+
+    &:hover:not(:disabled):not(.cta-button--disabled),
+    &:focus-visible:not(:disabled):not(.cta-button--disabled) {
+      background: rgba(vars.$color-primary, 0.2);
+      border-color: vars.$color-primary-strong;
+      transform: translateY(-1px);
+      box-shadow: vars.$shadow-soft;
+    }
+
+    &:active:not(:disabled):not(.cta-button--disabled) {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid vars.$color-primary;
+      outline-offset: 2px;
+    }
+  }
+
+  // Tertiary variant
+  &.cta-button--tertiary {
+    color: vars.$color-text-strong;
+    background: transparent;
+    border-color: vars.$color-border-subtle;
+    box-shadow: none;
+
+    &:hover:not(:disabled):not(.cta-button--disabled),
+    &:focus-visible:not(:disabled):not(.cta-button--disabled) {
+      background: vars.$color-border-subtle;
+      border-color: vars.$color-text-muted;
+      color: vars.$color-text-strong;
+      transform: translateY(-1px);
+    }
+
+    &:active:not(:disabled):not(.cta-button--disabled) {
+      transform: translateY(0);
+      background: vars.$color-border-subtle;
+    }
+
+    &:focus-visible {
+      outline: 2px solid vars.$color-text-muted;
+      outline-offset: 2px;
+    }
+  }
+
+  // Disabled state
+  &.cta-button--disabled,
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+    transform: none !important;
+    box-shadow: none !important;
+  }
+}

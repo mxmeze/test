@@ -1,0 +1,124 @@
+@use '../../../styles/variables' as vars;
+
+:host {
+  display: block;
+  width: 100%;
+}
+
+.footer {
+  background: linear-gradient(180deg, vars.$color-text-strong 0%, #0a0e1a 100%);
+  color: vars.$color-text-inverse;
+  padding: vars.$space-800 0 vars.$space-500 0;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, vars.$color-primary, transparent);
+    opacity: 0.3;
+  }
+}
+
+.footer__content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 vars.$space-400;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: vars.$space-600;
+  position: relative;
+  z-index: 1;
+  
+  @media (min-width: 768px) {
+    grid-template-columns: 2fr 3fr;
+    gap: vars.$space-800;
+  }
+}
+
+.footer__brand-name {
+  margin: 0 0 vars.$space-300 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: vars.$color-text-inverse;
+  letter-spacing: -0.01em;
+}
+
+.footer__brand-tagline {
+  margin: 0;
+  font-size: vars.$font-size-base;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+}
+
+.footer__nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: vars.$space-400;
+}
+
+.footer__column-title {
+  margin: 0 0 vars.$space-300 0;
+  font-size: vars.$font-size-base;
+  font-weight: 600;
+  color: vars.$color-text-inverse;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: vars.$space-200;
+}
+
+.footer__link {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: vars.$font-size-base;
+  transition: all 0.2s ease;
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: vars.$color-primary;
+    transition: width 0.3s ease;
+  }
+
+  &:hover {
+    color: vars.$color-text-inverse;
+    transform: translateX(4px);
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.footer__bottom {
+  max-width: 1200px;
+  margin: vars.$space-500 auto 0;
+  padding: vars.$space-400 vars.$space-400 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer__copyright {
+  margin: 0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+

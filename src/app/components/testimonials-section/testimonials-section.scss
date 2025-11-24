@@ -1,0 +1,126 @@
+@use 'sass:math';
+@use '../../../styles/variables' as vars;
+@use '../../../styles/theme.config' as theme;
+
+:host {
+  display: block;
+  width: 100%;
+  background: rgba(37, 99, 235, 0.05);
+}
+
+.testimonials-section {
+  padding: calc(vars.$space-500 * 2) 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials-section__header {
+  text-align: center;
+  margin-bottom: calc(vars.$space-500 * 2);
+}
+
+.testimonials-section__headline {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, vars.$font-size-xl);
+  font-weight: 600;
+  color: vars.$color-text-strong;
+}
+
+.testimonials-section__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: vars.$space-400;
+  
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.testimonial-card {
+  padding: vars.$space-500;
+  border-radius: vars.$radius-xl;
+  border: 2px solid vars.$color-border-subtle;
+  background: vars.$color-surface;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  // Subtle accent border on hover
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, theme.$theme-primary-500, theme.$theme-primary-600);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.08);
+    border-color: theme.$theme-primary-200;
+
+    &::before {
+      transform: scaleX(1);
+    }
+  }
+
+  &:active {
+    transform: translateY(-2px);
+  }
+}
+
+.testimonial-card__rating {
+  margin-bottom: vars.$space-300;
+  color: #fbbf24;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  display: flex;
+  gap: 2px;
+}
+
+.testimonial-card__star {
+  display: inline-block;
+  transition: transform 0.2s ease;
+
+  .testimonial-card:hover & {
+    transform: scale(1.1);
+  }
+}
+
+.testimonial-card__text {
+  margin: 0 0 vars.$space-400 0;
+  font-size: vars.$font-size-base;
+  color: vars.$color-text-strong;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.testimonial-card__author {
+  display: flex;
+  flex-direction: column;
+  gap: math.div(vars.$space-200, 2);
+  padding-top: vars.$space-300;
+  border-top: 1px solid vars.$color-border-subtle;
+}
+
+.testimonial-card__name {
+  font-size: vars.$font-size-base;
+  color: vars.$color-text-strong;
+  font-weight: 600;
+}
+
+.testimonial-card__meta {
+  font-size: 0.9rem;
+  color: vars.$color-text-muted;
+}

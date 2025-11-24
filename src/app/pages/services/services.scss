@@ -1,0 +1,72 @@
+@use '../../../styles/variables' as vars;
+
+.services-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.services-page__services-grid {
+  padding: vars.$space-500 * 2 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: vars.$space-400;
+  padding-right: vars.$space-400;
+}
+
+.services-page__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: vars.$space-400;
+  
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.services-page__card {
+  height: 100%;
+}
+
+.services-page__promotion {
+  padding: vars.$space-500 * 2 0;
+  background: linear-gradient(135deg, vars.$color-primary 0%, vars.$color-primary-strong 100%);
+  color: vars.$color-text-inverse;
+}
+
+.services-page__promotion-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 vars.$space-400;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: vars.$space-400;
+  align-items: center;
+}
+
+.services-page__promotion-headline {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, vars.$font-size-xl);
+  font-weight: 700;
+  color: vars.$color-text-inverse;
+}
+
+.services-page__promotion-text {
+  margin: 0;
+  font-size: vars.$font-size-base;
+  color: vars.$color-text-inverse;
+  opacity: 0.9;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.services-page__promotion-cta {
+  margin-top: vars.$space-300;
+}

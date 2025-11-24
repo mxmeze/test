@@ -1,0 +1,130 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "services": "Leistungen",
+    "contact": "Kontakt",
+    "impress": "Impressum",
+    "login": "Anmelden",
+    "register": "Registrieren",
+    "toggle": "Navigation umschalten"
+  },
+  "hero": {
+    "kicker": "Innovation beginnt hier",
+    "headline": "Die Zukunft bauen, eine Innovation nach der anderen",
+    "mainText": "Wir sind ein frisches, agiles Team von Innovatoren, die mutige Ideen in die Realität umsetzen. Keine Legacy-Systeme, keine veralteten Prozesse—nur modernste Lösungen, schnell geliefert.",
+    "cta": "Projekt starten"
+  },
+  "valueProposition": {
+    "headline": "Warum mit uns arbeiten?",
+    "subheadline": "Wir sind nicht nur Entwickler—wir sind Ihre Innovationspartner",
+    "speed": {
+      "title": "Blitzschnell",
+      "description": "Vom Konzept bis zum Deployment in Wochen, nicht Monaten. Wir bewegen uns in Startup-Geschwindigkeit."
+    },
+    "quality": {
+      "title": "Enterprise-Qualität",
+      "description": "Gebaut zum Skalieren mit sauberem Code, Best Practices und moderner Architektur."
+    },
+    "transparency": {
+      "title": "Volle Transparenz",
+      "description": "Wöchentliche Updates, offene Kommunikation und keine Überraschungen. Sie sind immer im Bilde."
+    },
+    "partnership": {
+      "title": "Echte Partnerschaft",
+      "description": "Wir investieren in Ihren Erfolg. Ihre Ziele werden unsere Ziele, und wir sind langfristig dabei."
+    }
+  },
+  "features": {
+    "headline": "Was uns auszeichnet",
+    "subheadline": "Innovation, Geschwindigkeit und Agilität—der neue Weg, Technologie zu entwickeln",
+    "rapidPrototyping": {
+      "title": "Rapid Prototyping",
+      "description": "Von der Idee zum funktionierenden Prototyp in Tagen, nicht Monaten. Wir bewegen uns schnell und iterieren schnell."
+    },
+    "aiSolutions": {
+      "title": "KI-gestützte Lösungen",
+      "description": "Nutzen Sie modernste KI und maschinelles Lernen, um komplexe Probleme intelligent zu lösen."
+    },
+    "modernStack": {
+      "title": "Moderner Tech-Stack",
+      "description": "Gebaut mit den neuesten Technologien und Frameworks für Leistung und Skalierbarkeit."
+    },
+    "agile": {
+      "title": "Agile Entwicklung",
+      "description": "Flexibler, iterativer Ansatz, der sich an Ihre Bedürfnisse anpasst, während sie sich entwickeln."
+    },
+    "innovationLab": {
+      "title": "Innovationslabor",
+      "description": "Experimentieren Sie mit neuen Technologien, um kreative Lösungen für Ihre Herausforderungen zu finden."
+    },
+    "startupFriendly": {
+      "title": "Startup-freundlich",
+      "description": "Entwickelt für Startups und Innovatoren, die schnelle Ergebnisse benötigen, ohne das Budget zu sprengen."
+    }
+  },
+  "content": {
+    "freshPerspective": {
+      "headline": "Frische Perspektive, mutige Ideen",
+      "text": "Als neues Unternehmen sind wir nicht an Legacy-Systeme oder veraltete Denkweisen gebunden. Wir bringen frische Augen zu jeder Herausforderung und haben keine Angst, neue Ansätze zu versuchen. Unser kleines, fokussiertes Team bedeutet, dass Sie direkten Zugang zu den Menschen haben, die Ihre Lösung entwickeln—keine Ebenen, keine Bürokratie, nur Ergebnisse."
+    },
+    "builtForInnovators": {
+      "headline": "Von Innovatoren für Innovatoren gebaut",
+      "text": "Wir verstehen, wie es ist, ein Startup oder Innovator zu sein—Sie brauchen Lösungen, die funktionieren, schnell, ohne Enterprise-Overhead. Wir nutzen die neuesten Tools und Technologien, begrüßen Experimente und bewegen uns in der Geschwindigkeit, die Sie brauchen. Jedes Projekt ist eine Gelegenheit, Grenzen zu verschieben und etwas Bemerkenswertes zu schaffen."
+    }
+  },
+  "testimonials": {
+    "headline": "Early Adopters lieben uns"
+  },
+  "cta": {
+    "headline": "Bereit, etwas Erstaunliches zu bauen?",
+    "subheadline": "Lassen Sie uns Ihre innovative Idee in die Realität umsetzen. Schnell, flexibel und zukunftsorientiert.",
+    "button": "Lass uns reden"
+  },
+  "footer": {
+    "tagline": "Innovation. Geschwindigkeit. Ergebnisse. Die Zukunft bauen, ein Projekt nach dem anderen.",
+    "company": "Unternehmen",
+    "legal": "Rechtliches"
+  },
+  "services": {
+    "hero": {
+      "kicker": "Was wir liefern",
+      "headline": "Services für schnelle Produktteams",
+      "mainText": "Wir kombinieren Strategie, UX und Entwicklung. Nutze die Bausteine aus unserer Komponenten-Bibliothek, um Features schneller auszuliefern.",
+      "cta": "Projekt anfragen"
+    },
+    "intro": {
+      "headline": "Umfassende IT-Lösungen",
+      "subheadline": "Von der Konzeption bis zum Deployment—wir haben alles abgedeckt"
+    },
+    "consulting": {
+      "title": "Beratung",
+      "description": "Stakeholder ausrichten, KPIs definieren und die Einführung Ihrer nächsten Version planen. Strategische Beratung, um die richtigen Technologieentscheidungen zu treffen."
+    },
+    "implementation": {
+      "title": "Implementierung",
+      "description": "Komponentengetriebene Entwicklung mit modernen Frameworks, RxJS und typsicheren APIs. Wir bauen skalierbare Lösungen, die mit Ihrem Unternehmen wachsen."
+    },
+    "enablement": {
+      "title": "Befähigung",
+      "description": "Pair-Programming, Wissenstransfer und Dokumentation, um Teams in Bewegung zu halten. Wir stellen sicher, dass Ihr Team das, was wir bauen, warten und erweitern kann."
+    },
+    "support": {
+      "title": "Support & Wartung",
+      "description": "Laufender Support, um Ihre Systeme reibungslos am Laufen zu halten. Proaktives Monitoring und schnelle Reaktionszeiten."
+    },
+    "promotion": {
+      "headline": "Sonderangebot: Launch-Paket",
+      "text": "Bringen Sie Ihr MVP schneller auf den Markt mit unserem umfassenden Launch-Paket. Enthält Rapid Prototyping, Kernfunktionsentwicklung und Deployment-Setup—alles zu einem speziellen Einführungspreis für neue Kunden.",
+      "cta": "Mehr erfahren"
+    },
+    "whyChoose": {
+      "headline": "Warum unsere Services wählen?",
+      "text": "Wir sind nicht nur eine weitere Entwicklungsagentur. Wir sind Ihre Innovationspartner, die sich darauf konzentrieren, Ihre einzigartigen Herausforderungen zu verstehen und Lösungen zu liefern, die echten Geschäftswert schaffen. Unser agiler Ansatz bedeutet, dass Sie wöchentlich Fortschritte sehen, nicht vierteljährlich."
+    },
+    "process": {
+      "headline": "Unser Prozess",
+      "text": "Wir beginnen mit der Entdeckung, um Ihre Ziele zu verstehen, dann bewegen wir uns schnell durch Design und Entwicklung mit regelmäßigen Check-ins. Jeder Sprint liefert funktionierende Software, und jede Veröffentlichung bringt Sie Ihrer Vision näher. Keine Überraschungen, nur Ergebnisse."
+    }
+  }
+}
+

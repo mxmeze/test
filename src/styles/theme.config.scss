@@ -1,0 +1,122 @@
+// ============================================================================
+// THEME CONFIGURATION FILE
+// ============================================================================
+// 
+// This is the SINGLE SOURCE OF TRUTH for all colors in the application.
+// To change the color scheme, simply modify the values below.
+// 
+// All colors are automatically exported as CSS custom properties (--theme-*)
+// and can be used throughout the application.
+//
+// QUICK START:
+// 1. Change $theme-primary-500 to your main brand color
+// 2. Adjust other primary shades as needed
+// 3. Save and the entire app will update!
+//
+// ============================================================================
+
+// PRIMARY COLOR PALETTE
+// Change these to rebrand the entire application
+$theme-primary-50: #eff6ff;
+$theme-primary-100: #dbeafe;
+$theme-primary-200: #bfdbfe;
+$theme-primary-300: #93c5fd;
+$theme-primary-400: #60a5fa;
+$theme-primary-500: #3b82f6;  // Main brand color - CHANGE THIS!
+$theme-primary-600: #2563eb;  // Primary strong
+$theme-primary-700: #1d4ed8;
+$theme-primary-800: #1e40af;
+$theme-primary-900: #1e3a8a;
+
+// NEUTRAL COLOR PALETTE
+$theme-neutral-50: #f9fafb;
+$theme-neutral-100: #f3f4f6;
+$theme-neutral-200: #e5e7eb;
+$theme-neutral-300: #d1d5db;
+$theme-neutral-400: #9ca3af;
+$theme-neutral-500: #6b7280;
+$theme-neutral-600: #4b5563;
+$theme-neutral-700: #374151;
+$theme-neutral-800: #1f2937;
+$theme-neutral-900: #111827;
+
+// SEMANTIC COLORS
+$theme-success: #10b981;
+$theme-success-light: #d1fae5;
+$theme-warning: #f59e0b;
+$theme-warning-light: #fef3c7;
+$theme-error: #ef4444;
+$theme-error-light: #fee2e2;
+$theme-info: #3b82f6;
+$theme-info-light: #dbeafe;
+
+// SURFACE COLORS
+$theme-surface: #ffffff;
+$theme-surface-elevated: #ffffff;
+$theme-surface-subtle: #f9fafb;
+
+// TEXT COLORS
+$theme-text-primary: #111827;
+$theme-text-secondary: #4b5563;
+$theme-text-tertiary: #6b7280;
+$theme-text-inverse: #ffffff;
+$theme-text-disabled: #9ca3af;
+
+// BORDER COLORS
+$theme-border: #e5e7eb;
+$theme-border-subtle: #f3f4f6;
+$theme-border-strong: #d1d5db;
+
+// Export to CSS custom properties for runtime theming
+:root {
+  // Primary Colors
+  --theme-primary-50: #{$theme-primary-50};
+  --theme-primary-100: #{$theme-primary-100};
+  --theme-primary-200: #{$theme-primary-200};
+  --theme-primary-300: #{$theme-primary-300};
+  --theme-primary-400: #{$theme-primary-400};
+  --theme-primary-500: #{$theme-primary-500};
+  --theme-primary-600: #{$theme-primary-600};
+  --theme-primary-700: #{$theme-primary-700};
+  --theme-primary-800: #{$theme-primary-800};
+  --theme-primary-900: #{$theme-primary-900};
+  
+  // Neutral Colors
+  --theme-neutral-50: #{$theme-neutral-50};
+  --theme-neutral-100: #{$theme-neutral-100};
+  --theme-neutral-200: #{$theme-neutral-200};
+  --theme-neutral-300: #{$theme-neutral-300};
+  --theme-neutral-400: #{$theme-neutral-400};
+  --theme-neutral-500: #{$theme-neutral-500};
+  --theme-neutral-600: #{$theme-neutral-600};
+  --theme-neutral-700: #{$theme-neutral-700};
+  --theme-neutral-800: #{$theme-neutral-800};
+  --theme-neutral-900: #{$theme-neutral-900};
+  
+  // Semantic Colors
+  --theme-success: #{$theme-success};
+  --theme-success-light: #{$theme-success-light};
+  --theme-warning: #{$theme-warning};
+  --theme-warning-light: #{$theme-warning-light};
+  --theme-error: #{$theme-error};
+  --theme-error-light: #{$theme-error-light};
+  --theme-info: #{$theme-info};
+  --theme-info-light: #{$theme-info-light};
+  
+  // Surface Colors
+  --theme-surface: #{$theme-surface};
+  --theme-surface-elevated: #{$theme-surface-elevated};
+  --theme-surface-subtle: #{$theme-surface-subtle};
+  
+  // Text Colors
+  --theme-text-primary: #{$theme-text-primary};
+  --theme-text-secondary: #{$theme-text-secondary};
+  --theme-text-tertiary: #{$theme-text-tertiary};
+  --theme-text-inverse: #{$theme-text-inverse};
+  --theme-text-disabled: #{$theme-text-disabled};
+  
+  // Border Colors
+  --theme-border: #{$theme-border};
+  --theme-border-subtle: #{$theme-border-subtle};
+  --theme-border-strong: #{$theme-border-strong};
+}

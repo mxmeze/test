@@ -1,6 +1,8 @@
-export interface someObject {
-  name: string;
-  email: string;
-  id: number;
-  someNumber: number;
+export interface SomeObject {
+  name?: string;
+  email?: string;
+  id?: number;
+  someNumber?: number;
 }
+
+export type ModelActions = 'EDIT' | 'DELETE';

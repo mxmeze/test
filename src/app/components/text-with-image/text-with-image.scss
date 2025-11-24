@@ -1,0 +1,122 @@
+@use '../../../styles/variables' as vars;
+
+:host {
+  display: block;
+  width: 100%;
+}
+
+.text-with-image {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: vars.$space-500;
+  align-items: center;
+  padding: vars.$space-700 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    gap: calc(vars.$space-500 * 2);
+    padding: vars.$space-800 0;
+  }
+}
+
+.text-with-image--image-left {
+  @media (min-width: 768px) {
+    .text-with-image__content {
+      order: 2;
+    }
+
+    .text-with-image__image-wrapper {
+      order: 1;
+    }
+  }
+}
+
+.text-with-image--image-right {
+  @media (min-width: 768px) {
+    .text-with-image__content {
+      order: 1;
+    }
+
+    .text-with-image__image-wrapper {
+      order: 2;
+    }
+  }
+}
+
+.text-with-image__content {
+  display: flex;
+  flex-direction: column;
+  gap: vars.$space-300;
+}
+
+.text-with-image__headline {
+  margin: 0;
+  font-size: clamp(1.75rem, 4vw, 2rem);
+  font-weight: 700;
+  color: vars.$color-text-strong;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.text-with-image__text {
+  font-size: vars.$font-size-base;
+  color: vars.$color-text-muted;
+  line-height: 1.6;
+
+  p {
+    margin: 0 0 vars.$space-300 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.text-with-image__image-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: vars.$radius-xl;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
+  background: vars.$color-surface;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 vars.$space-400;
+  
+  @media (min-width: 768px) {
+    margin: 0 vars.$space-500;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+.text-with-image__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.text-with-image__image-wrapper:hover .text-with-image__image {
+  transform: scale(1.05);
+}
+

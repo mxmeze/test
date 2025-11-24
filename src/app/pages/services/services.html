@@ -1,0 +1,54 @@
+<div class="services-page">
+  <app-hero-stage
+    [fullWidth]="true"
+    [kicker]="sectionTexts().heroKicker"
+    [headline]="sectionTexts().heroHeadline"
+    [mainText]="sectionTexts().heroMainText"
+    [ctaLabel]="sectionTexts().heroCta"
+    ctaHref="/contact"
+  ></app-hero-stage>
+
+  <section class="services-page__services-grid">
+    <div class="services-page__grid">
+      @for (service of services(); track service.headline) {
+        <app-display-card
+          class="services-page__card"
+          [headline]="service.headline"
+          [subtext]="service.subtext"
+        ></app-display-card>
+      }
+    </div>
+  </section>
+
+  <app-text-with-image
+    [headline]="sectionTexts().whyChooseHeadline"
+    [text]="sectionTexts().whyChooseText"
+    imageUrl="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
+    imageAlt="Team collaboration"
+    [imagePosition]="'right'"
+  ></app-text-with-image>
+
+  <app-text-with-image
+    [headline]="sectionTexts().processHeadline"
+    [text]="sectionTexts().processText"
+    imageUrl="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80"
+    imageAlt="Development process"
+    [imagePosition]="'left'"
+  ></app-text-with-image>
+
+  <section class="services-page__promotion">
+    <div class="services-page__promotion-content">
+      <h2 class="services-page__promotion-headline">{{ sectionTexts().promotionHeadline }}</h2>
+      <p class="services-page__promotion-text">{{ sectionTexts().promotionText }}</p>
+      <app-cta-button
+        class="services-page__promotion-cta"
+        [label]="sectionTexts().promotionCta"
+        href="/contact"
+        variant="secondary"
+      ></app-cta-button>
+    </div>
+  </section>
+
+
+  <app-footer></app-footer>
+</div>

@@ -1,0 +1,117 @@
+@use '../../../styles/variables' as vars;
+
+:host {
+  display: block;
+  width: 100%;
+  overflow-x: hidden; // Prevent horizontal scroll
+}
+
+.hero-stage {
+  position: relative;
+  min-height: vars.$hero-height; // At least 60% of viewport height
+  padding: clamp(vars.$space-400, 5vw, calc(vars.$space-500 * 2));
+  border-radius: vars.$radius-lg;
+  overflow: hidden;
+  background-color: var(--theme-primary-900, #1e3a8a);
+  background-image: vars.$hero-bg-fallback;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: vars.$shadow-elevated;
+  color: vars.$color-text-inverse;
+  margin: 0 auto;
+  
+  // Center content both vertically and horizontally
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  // Fade-in animation
+  animation: fadeIn 0.8s ease-in-out;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: vars.$hero-overlay;
+    z-index: 0;
+  }
+
+  &.hero-stage--full {
+    border-radius: 0;
+    box-shadow: none;
+    width: 100vw; // Full viewport width
+    max-width: 100vw; // Ensure it doesn't exceed viewport
+    margin-left: calc(50% - 50vw); // Break out of container to left edge
+    margin-right: calc(50% - 50vw); // Break out of container to right edge
+    position: relative;
+    left: 0;
+    right: 0;
+  }
+}
+
+.hero-stage__content {
+  position: relative;
+  z-index: 1;
+  max-width: vars.$hero-content-max-width;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: vars.$space-300;
+  text-align: center; // Center text content
+  align-items: center; // Center child elements
+  padding: 0 vars.$space-400; // Add horizontal padding for content
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.hero-stage__kicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.9rem;
+  color: vars.$color-primary;
+  font-weight: 600;
+}
+
+.hero-stage__headline {
+  margin: 0;
+  font-size: clamp(2.25rem, 5vw, vars.$font-size-xl);
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.hero-stage__body {
+  margin: 0;
+  font-size: clamp(vars.$font-size-base, 2vw, 1.125rem);
+  color: vars.$color-text-inverse;
+  opacity: 0.95;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.hero-stage__cta {
+  margin-top: vars.$space-300;
+  width: fit-content;
+  animation: fadeInUp 0.8s ease-out 0.3s both;
+}
+
+// Animations
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

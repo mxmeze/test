@@ -1,0 +1,106 @@
+@use '../../../styles/variables' as vars;
+@use '../../../styles/theme.config' as theme;
+
+:host {
+  display: block;
+  width: 100%;
+}
+
+section.cta-section {
+  padding: vars.$space-800 vars.$space-400;
+  background: linear-gradient(135deg, theme.$theme-primary-600 0%, theme.$theme-primary-700 50%, theme.$theme-primary-800 100%);
+  color: vars.$color-text-inverse;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  box-sizing: border-box;
+  
+  @media (min-width: 768px) {
+    padding: vars.$space-800 vars.$space-500;
+    min-height: 450px;
+  }
+
+  // Animated background pattern
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: movePattern 20s linear infinite;
+    opacity: 0.3;
+    z-index: 0;
+  }
+
+  &.cta-section--secondary {
+    background: vars.$color-surface;
+    color: vars.$color-text-strong;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+@keyframes movePattern {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(50px, 50px);
+  }
+}
+
+.cta-section__content {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 vars.$space-400;
+  display: flex;
+  flex-direction: column;
+  gap: vars.$space-400;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  box-sizing: border-box;
+  
+  @media (min-width: 768px) {
+    padding: 0 vars.$space-500;
+  }
+}
+
+.cta-section__headline {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: inherit;
+}
+
+.cta-section__subheadline {
+  margin: 0;
+  font-size: vars.$font-size-base;
+  opacity: 0.9;
+  line-height: 1.7;
+  text-align: center;
+  max-width: 600px;
+  color: inherit;
+}
+
+.cta-section__button {
+  margin-top: vars.$space-400;
+  display: block;
+}

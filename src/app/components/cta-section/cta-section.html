@@ -1,0 +1,14 @@
+<section class="cta-section" [class.cta-section--secondary]="variant === 'secondary'">
+  <div class="cta-section__content">
+    <h2 class="cta-section__headline">{{ headline }}</h2>
+    @if (subheadline) {
+      <p class="cta-section__subheadline">{{ subheadline }}</p>
+    }
+    <app-cta-button
+      class="cta-section__button"
+      [label]="ctaLabel"
+      [href]="ctaHref"
+      [variant]="variant === 'primary' ? 'primary' : 'secondary'"
+    ></app-cta-button>
+  </div>
+</section>

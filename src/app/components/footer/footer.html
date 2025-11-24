@@ -1,0 +1,29 @@
+<footer class="footer">
+  <div class="footer__content">
+    <div class="footer__brand">
+      <h3 class="footer__brand-name">TestFrontend</h3>
+      <p class="footer__brand-tagline">{{ tagline() }}</p>
+    </div>
+
+    <nav class="footer__nav">
+      @for (column of columns(); track column.titleKey) {
+        <div class="footer__column">
+          <h4 class="footer__column-title">{{ getTitle(column.titleKey) }}</h4>
+          <ul class="footer__links">
+            @for (link of column.links; track link.url) {
+              <li>
+                <a [routerLink]="link.url" class="footer__link">{{ getTitle(link.titleKey) }}</a>
+              </li>
+            }
+          </ul>
+        </div>
+      }
+    </nav>
+  </div>
+
+  <div class="footer__bottom">
+    <p class="footer__copyright">
+      © {{ currentYear }} TestFrontend. All rights reserved.
+    </p>
+  </div>
+</footer>

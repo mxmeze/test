@@ -1,0 +1,20 @@
+<section class="features-section">
+  <div class="features-section__header">
+    <h2 class="features-section__headline">{{ headline }}</h2>
+    @if (subheadline) {
+      <p class="features-section__subheadline">{{ subheadline }}</p>
+    }
+  </div>
+
+  <div class="features-section__grid">
+    @for (feature of features; track feature.title) {
+      <article class="feature-card">
+        @if (feature.icon) {
+          <div class="feature-card__icon">{{ feature.icon }}</div>
+        }
+        <h3 class="feature-card__title">{{ feature.title }}</h3>
+        <p class="feature-card__description">{{ feature.description }}</p>
+      </article>
+    }
+  </div>
+</section>

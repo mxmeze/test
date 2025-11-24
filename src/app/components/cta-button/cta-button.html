@@ -1,0 +1,27 @@
+@if (href) {
+  <a
+    class="cta-button"
+    [class.cta-button--primary]="variant === 'primary'"
+    [class.cta-button--secondary]="variant === 'secondary'"
+    [class.cta-button--tertiary]="variant === 'tertiary'"
+    [class.cta-button--disabled]="disabled"
+    [attr.href]="disabled ? null : href"
+    [attr.target]="target"
+    [attr.rel]="computedRel()"
+    (click)="handleClick($event)"
+  >
+    {{ label }}
+  </a>
+} @else {
+  <button
+    type="button"
+    class="cta-button"
+    [class.cta-button--primary]="variant === 'primary'"
+    [class.cta-button--secondary]="variant === 'secondary'"
+    [class.cta-button--tertiary]="variant === 'tertiary'"
+    [disabled]="disabled"
+    (click)="handleClick($event)"
+  >
+    {{ label }}
+  </button>
+}

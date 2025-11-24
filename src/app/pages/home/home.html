@@ -1,0 +1,46 @@
+<div class="homepage">
+  <app-hero-stage
+    [fullWidth]="true"
+    [kicker]="heroTexts().kicker"
+    [headline]="heroTexts().headline"
+    [mainText]="heroTexts().mainText"
+    [ctaLabel]="heroTexts().cta"
+    ctaHref="/contact"
+  ></app-hero-stage>
+
+  <app-features-section
+    [headline]="sectionTexts().featuresHeadline"
+    [subheadline]="sectionTexts().featuresSubheadline"
+    [features]="features()"
+  ></app-features-section>
+
+  <app-text-with-image
+    [headline]="sectionTexts().freshHeadline"
+    [text]="sectionTexts().freshText"
+    imageUrl="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
+    imageAlt="Innovative team collaboration"
+    [imagePosition]="'right'"
+  ></app-text-with-image>
+
+  <app-text-with-image
+    [headline]="sectionTexts().innovatorsHeadline"
+    [text]="sectionTexts().innovatorsText"
+    imageUrl="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80"
+    imageAlt="Modern innovation workspace"
+    [imagePosition]="'left'"
+  ></app-text-with-image>
+
+  <app-testimonials-section
+    [headline]="sectionTexts().testimonialsHeadline"
+    [testimonials]="testimonials"
+  ></app-testimonials-section>
+
+  <app-cta-section
+    [headline]="sectionTexts().ctaHeadline"
+    [subheadline]="sectionTexts().ctaSubheadline"
+    [ctaLabel]="sectionTexts().ctaButton"
+    ctaHref="/contact"
+  ></app-cta-section>
+
+  <app-footer></app-footer>
+</div>

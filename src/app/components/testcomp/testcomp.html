@@ -1,0 +1,6 @@
+<div class="testlist">
+  @for (object of testObjects; track object.id) {
+    <app-testcompitem (action)="performAction(object, $event)" [someObject]="object"></app-testcompitem>
+  }
+</div>
+

@@ -1,0 +1,69 @@
+<nav class="nav">
+  <div class="nav__container">
+    <a class="nav__brand" routerLink="/" (click)="closeMenu()">TestFrontend</a>
+
+    <button
+      type="button"
+      class="nav__toggle"
+      (click)="toggleMenu()"
+      aria-label="Toggle navigation"
+      [attr.aria-expanded]="menuOpen()"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="nav__panel" [class.nav__panel--open]="menuOpen()">
+    <ul class="nav__primary">
+      @for (link of primaryLinks; track link.url) {
+        @if (shouldShow(link)) {
+          <li>
+            <a
+              [routerLink]="link.url"
+              routerLinkActive="is-active"
+              [routerLinkActiveOptions]="{ exact: link.url === '/' }"
+              (click)="closeMenu()"
+            >
+              {{ getTitle()(link) }}
+            </a>
+          </li>
+        }
+      }
+    </ul>
+
+    <div class="nav__secondary">
+      @for (action of accountLinks; track action.url) {
+        @if (shouldShow(action)) {
+          <a
+            class="nav__action"
+            [class.nav__action--accent]="action.accent"
+            [routerLink]="action.url"
+            routerLinkActive="is-active"
+            (click)="closeMenu()"
+          >
+            {{ getTitle()(action) }}
+          </a>
+        }
+      }
+
+      <div class="nav__language-switcher">
+        <button
+          type="button"
+          [class.is-active]="currentLang() === 'en'"
+          (click)="switchLanguage('en')"
+        >
+          EN
+        </button>
+        <button
+          type="button"
+          [class.is-active]="currentLang() === 'de'"
+          (click)="switchLanguage('de')"
+        >
+          DE
+        </button>
+      </div>
+    </div>
+  </div>
+  </div>
+</nav>

@@ -1,0 +1,99 @@
+// Design tokens shared across the app. Keep colors and spacings centralized here.
+@use './theme.config' as theme;
+
+// Typography
+$font-size-base: 16px;
+$font-size-sm: 14px;
+$font-size-lg: 18px;
+$font-size-xl: 24px;
+$font-size-2xl: 30px;
+$font-size-3xl: 36px;
+
+// Use theme colors - these reference the theme.config.scss file
+$color-surface: theme.$theme-surface;
+$color-text-strong: theme.$theme-text-primary;
+$color-text-muted: theme.$theme-text-secondary;
+$color-text-inverse: theme.$theme-text-inverse;
+$color-border-subtle: theme.$theme-border-subtle;
+$color-primary: theme.$theme-primary-600;
+$color-primary-strong: theme.$theme-primary-700;
+$color-primary-muted: theme.$theme-primary-100;
+
+// Shadows
+$shadow-soft: 0 8px 30px rgba(0, 0, 0, 0.12);
+$shadow-elevated: 0 30px 60px rgba(0, 0, 0, 0.25);
+
+// Border Radius
+$radius-sm: 0.25rem;
+$radius-md: 0.5rem;
+$radius-lg: 0.75rem;
+$radius-xl: 1rem;
+
+// Spacing Scale
+$space-100: 0.25rem;  // 4px
+$space-200: 0.5rem;   // 8px
+$space-300: 1rem;    // 16px
+$space-400: 1.5rem;  // 24px
+$space-500: 2rem;    // 32px
+$space-600: 2.5rem;  // 40px
+$space-700: 3rem;    // 48px
+$space-800: 4rem;    // 64px
+
+// Component-specific variables
+$card-max-width: 28rem;
+$hero-height: 75vh;
+$hero-overlay: rgba(15, 23, 42, 0.65);
+$hero-bg-fallback: linear-gradient(135deg, theme.$theme-primary-700 0%, theme.$theme-primary-500 50%, theme.$theme-primary-400 100%);
+$hero-content-max-width: 800px;
+
+// Export all as CSS custom properties for easy theming
+:root {
+  // Typography
+  --font-size-base: #{$font-size-base};
+  --font-size-sm: #{$font-size-sm};
+  --font-size-lg: #{$font-size-lg};
+  --font-size-xl: #{$font-size-xl};
+  --font-size-2xl: #{$font-size-2xl};
+  --font-size-3xl: #{$font-size-3xl};
+  
+  // Legacy compatibility
+  --text-size: #{$font-size-base};
+  --text-size-lg: #{$font-size-lg};
+  --text-size-xl: #{$font-size-xl};
+  
+  // Colors (using theme)
+  --color-surface: #{$color-surface};
+  --color-text-strong: #{$color-text-strong};
+  --color-text-muted: #{$color-text-muted};
+  --color-text-inverse: #{$color-text-inverse};
+  --color-border-subtle: #{$color-border-subtle};
+  --color-primary: #{$color-primary};
+  --color-primary-strong: #{$color-primary-strong};
+  --color-primary-muted: #{$color-primary-muted};
+  
+  // Shadows
+  --shadow-soft: #{$shadow-soft};
+  --shadow-elevated: #{$shadow-elevated};
+  
+  // Border Radius
+  --radius-sm: #{$radius-sm};
+  --radius-md: #{$radius-md};
+  --radius-lg: #{$radius-lg};
+  --radius-xl: #{$radius-xl};
+  
+  // Spacing
+  --space-100: #{$space-100};
+  --space-200: #{$space-200};
+  --space-300: #{$space-300};
+  --space-400: #{$space-400};
+  --space-500: #{$space-500};
+  --space-600: #{$space-600};
+  --space-700: #{$space-700};
+  --space-800: #{$space-800};
+  
+  // Component Variables
+  --card-max-width: #{$card-max-width};
+  --hero-height: #{$hero-height};
+  --hero-overlay: #{$hero-overlay};
+  --hero-content-max-width: #{$hero-content-max-width};
+}
