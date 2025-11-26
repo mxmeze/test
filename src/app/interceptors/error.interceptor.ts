@@ -1,8 +1,11 @@
 import { HttpInterceptorFn, HttpErrorResponse } from '@angular/common/http';
 import { inject } from '@angular/core';
 import { catchError, throwError } from 'rxjs';
+import { LoggerService } from '../services/logger.service';
 
 export const errorInterceptor: HttpInterceptorFn = (req, next) => {
+  const logger = inject(LoggerService);
+  
   return next(req).pipe(
     catchError((error: HttpErrorResponse) => {
       let errorMessage = 'An unknown error occurred';
@@ -34,8 +37,8 @@ export const errorInterceptor: HttpInterceptorFn = (req, next) => {
         }
       }
       
-      // Log error for debugging (in production, send to error tracking service)
-      console.error('HTTP Error:', {
+      // Log error using LoggerService
+      logger.error('HTTP Error', {
         url: req.url,
         status: error.status,
         message: errorMessage,

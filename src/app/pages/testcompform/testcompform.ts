@@ -4,6 +4,7 @@ import {FormControl, FormGroup} from '@angular/forms';
 import {HttpClient} from '@angular/common/http';
 import {LoggerService} from '../../services/logger.service';
 import {environment} from '../../../environments/environment';
+import {take} from 'rxjs';
 
 @Component({
   selector: 'app-testcompform',
