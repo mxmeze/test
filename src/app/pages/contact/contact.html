@@ -19,7 +19,7 @@
               [class.contact-form__input--error]="contactForm.get('name')?.invalid && contactForm.get('name')?.touched"
             />
             @if (contactForm.get('name')?.invalid && contactForm.get('name')?.touched) {
-              <span class="contact-form__error">This field is required</span>
+              <span class="contact-form__error">{{ getErrorMessage('name') }}</span>
             }
           </div>
 
@@ -34,7 +34,7 @@
               [class.contact-form__input--error]="contactForm.get('email')?.invalid && contactForm.get('email')?.touched"
             />
             @if (contactForm.get('email')?.invalid && contactForm.get('email')?.touched) {
-              <span class="contact-form__error">Please enter a valid email address</span>
+              <span class="contact-form__error">{{ getErrorMessage('email') }}</span>
             }
           </div>
 
@@ -49,7 +49,7 @@
               [class.contact-form__input--error]="contactForm.get('subject')?.invalid && contactForm.get('subject')?.touched"
             />
             @if (contactForm.get('subject')?.invalid && contactForm.get('subject')?.touched) {
-              <span class="contact-form__error">This field is required</span>
+              <span class="contact-form__error">{{ getErrorMessage('subject') }}</span>
             }
           </div>
 
@@ -64,7 +64,7 @@
               [class.contact-form__input--error]="contactForm.get('message')?.invalid && contactForm.get('message')?.touched"
             ></textarea>
             @if (contactForm.get('message')?.invalid && contactForm.get('message')?.touched) {
-              <span class="contact-form__error">This field is required</span>
+              <span class="contact-form__error">{{ getErrorMessage('message') }}</span>
             }
           </div>
 

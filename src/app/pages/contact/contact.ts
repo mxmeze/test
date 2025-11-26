@@ -15,10 +15,26 @@ export class Contact {
   private logger = inject(LoggerService);
 
   contactForm = new FormGroup({
-    name: new FormControl('', [Validators.required]),
-    email: new FormControl('', [Validators.required, Validators.email]),
-    subject: new FormControl('', [Validators.required]),
-    message: new FormControl('', [Validators.required]),
+    name: new FormControl('', [
+      Validators.required,
+      Validators.minLength(2),
+      Validators.maxLength(50)
+    ]),
+    email: new FormControl('', [
+      Validators.required,
+      Validators.email,
+      Validators.maxLength(100)
+    ]),
+    subject: new FormControl('', [
+      Validators.required,
+      Validators.minLength(3),
+      Validators.maxLength(100)
+    ]),
+    message: new FormControl('', [
+      Validators.required,
+      Validators.minLength(10),
+      Validators.maxLength(1000)
+    ]),
   });
 
   protected readonly texts = computed(() => {
@@ -41,8 +57,36 @@ export class Contact {
       directText: t('contact.direct.text'),
       email: t('contact.direct.email'),
       responseTime: t('contact.direct.responseTime'),
+      formErrors: {
+        required: t('contact.formErrors.required'),
+        email: t('contact.formErrors.email'),
+        minlength: t('contact.formErrors.minlength'),
+        maxlength: t('contact.formErrors.maxlength'),
+      },
     };
   });
+
+  protected getErrorMessage(controlName: string): string {
+    const control = this.contactForm.get(controlName);
+    if (!control || !control.errors || !control.touched) {
+      return '';
+    }
+    
+    const errors = this.texts().formErrors;
+    if (control.hasError('required')) {
+      return errors.required;
+    }
+    if (control.hasError('email')) {
+      return errors.email;
+    }
+    if (control.hasError('minlength')) {
+      return errors.minlength;
+    }
+    if (control.hasError('maxlength')) {
+      return errors.maxlength;
+    }
+    return '';
+  }
 
   protected onSubmit(): void {
     if (this.contactForm.valid) {

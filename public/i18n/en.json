@@ -9,122 +9,168 @@
     "toggle": "Toggle navigation"
   },
   "hero": {
-    "kicker": "Innovation Starts Here",
-    "headline": "Building the Future, One Innovation at a Time",
-    "mainText": "We're a fresh, agile team of innovators turning bold ideas into reality. No legacy systems, no outdated processes—just cutting-edge solutions delivered fast.",
+    "kicker": "Solo Developer",
+    "headline": "Your Vision, Built with Precision",
+    "mainText": "I'm a solo developer specializing in modern web applications. No overhead, no bureaucracy—just direct communication, fast delivery, and quality code. Let's turn your ideas into reality.",
     "cta": "Start Your Project"
   },
   "valueProposition": {
-    "headline": "Why Work With Us?",
-    "subheadline": "We're not just developers—we're your innovation partners",
+    "headline": "Why Work With Me?",
+    "subheadline": "Direct access, personal attention, and results that matter",
     "speed": {
-      "title": "Lightning Fast",
-      "description": "From concept to deployment in weeks, not months. We move at startup speed."
+      "title": "Fast Delivery",
+      "description": "From concept to deployment in weeks, not months. As a solo developer, I move quickly and make decisions fast."
     },
     "quality": {
-      "title": "Enterprise Quality",
-      "description": "Built to scale with clean code, best practices, and modern architecture."
+      "title": "Quality Code",
+      "description": "Clean, maintainable code built with best practices and modern architecture. Every line is written with care."
     },
     "transparency": {
       "title": "Full Transparency",
-      "description": "Weekly updates, open communication, and no surprises. You're always in the loop."
+      "description": "Direct communication, regular updates, and no surprises. You always know what's happening with your project."
     },
     "partnership": {
-      "title": "True Partnership",
-      "description": "We invest in your success. Your goals become our goals, and we're in it for the long haul."
+      "title": "Personal Partnership",
+      "description": "I invest in your success. Your goals become my goals, and I'm committed to delivering exactly what you need."
     }
   },
   "features": {
-    "headline": "What Makes Us Different",
-    "subheadline": "Innovation, speed, and agility—the new way to build technology",
+    "headline": "What I Offer",
+    "subheadline": "Modern development, personal service, and results you can count on",
     "rapidPrototyping": {
       "title": "Rapid Prototyping",
-      "description": "Get from idea to working prototype in days, not months. We move fast and iterate quickly."
+      "description": "Get from idea to working prototype in days. I move fast and iterate quickly to validate your concepts."
     },
     "aiSolutions": {
-      "title": "AI-Powered Solutions",
-      "description": "Leverage cutting-edge AI and machine learning to solve complex problems intelligently."
+      "title": "AI Integration",
+      "description": "Leverage cutting-edge AI and machine learning to solve complex problems and enhance your applications."
     },
     "modernStack": {
       "title": "Modern Tech Stack",
-      "description": "Built with the latest technologies and frameworks for performance and scalability."
+      "description": "Built with the latest technologies and frameworks for performance, scalability, and maintainability."
     },
     "agile": {
       "title": "Agile Development",
-      "description": "Flexible, iterative approach that adapts to your needs as they evolve."
+      "description": "Flexible, iterative approach that adapts to your needs. We adjust as requirements evolve."
     },
     "innovationLab": {
-      "title": "Innovation Lab",
-      "description": "Experiment with emerging technologies to find creative solutions to your challenges."
+      "title": "Innovation Focus",
+      "description": "I experiment with emerging technologies to find creative solutions to your unique challenges."
     },
     "startupFriendly": {
       "title": "Startup-Friendly",
-      "description": "Designed for startups and innovators who need results fast without breaking the bank."
+      "description": "Designed for startups and small businesses who need results fast without breaking the bank."
     }
   },
   "content": {
     "freshPerspective": {
-      "headline": "Fresh Perspective, Bold Ideas",
-      "text": "As a new company, we're not bound by legacy systems or outdated ways of thinking. We bring fresh eyes to every challenge and aren't afraid to try new approaches. Our small, focused team means you get direct access to the people building your solution—no layers, no bureaucracy, just results."
+      "headline": "Personal Service, Professional Results",
+      "text": "As a solo developer, I bring a fresh perspective to every project. No layers of management, no bureaucracy—just direct communication and focused execution. You work directly with me, the person building your solution, ensuring your vision is understood and implemented exactly as you imagine."
     },
     "builtForInnovators": {
-      "headline": "Built for Innovators, by Innovators",
-      "text": "We understand what it's like to be a startup or innovator—you need solutions that work, fast, without the enterprise overhead. We use the latest tools and technologies, embrace experimentation, and move at the speed you need. Every project is an opportunity to push boundaries and create something remarkable."
+      "headline": "Built for You, by Someone Who Cares",
+      "text": "I understand what it's like to need solutions that work, fast, without enterprise overhead. I use the latest tools and technologies, stay current with best practices, and move at the speed you need. Every project is personal, and I'm committed to your success."
     }
   },
   "testimonials": {
-    "headline": "Early Adopters Love Us"
+    "headline": "What Clients Say"
   },
   "cta": {
     "headline": "Ready to Build Something Amazing?",
-    "subheadline": "Let's turn your innovative idea into reality. Fast, flexible, and forward-thinking.",
+    "subheadline": "Let's turn your idea into reality. Fast, flexible, and focused on your success.",
     "button": "Let's Talk"
   },
   "footer": {
-    "tagline": "Innovation. Speed. Results. Building the future, one project at a time.",
+    "tagline": "Quality. Speed. Results. Building your vision, one project at a time.",
     "company": "Company",
     "legal": "Legal"
   },
   "services": {
     "hero": {
-      "kicker": "What We Deliver",
-      "headline": "Services for Fast-Moving Product Teams",
-      "mainText": "We combine strategy, UX, and development. Use building blocks from our component library to ship features faster.",
-      "cta": "Request a Project"
+      "kicker": "What I Deliver",
+      "headline": "Full-Stack Development Services",
+      "mainText": "From frontend to backend, I handle it all. Modern web applications built with the latest technologies, delivered fast and maintained with care.",
+      "cta": "Start a Project"
     },
     "intro": {
-      "headline": "Comprehensive IT Solutions",
-      "subheadline": "From concept to deployment, we've got you covered"
+      "headline": "Comprehensive Development Services",
+      "subheadline": "From concept to deployment, I've got you covered"
     },
     "consulting": {
-      "title": "Consulting",
-      "description": "Align stakeholders, define KPIs, and plan the rollout of your next release. Strategic guidance to help you make the right technology decisions."
+      "title": "Technical Consulting",
+      "description": "Get expert advice on technology choices, architecture decisions, and best practices. I help you make informed decisions that set your project up for success."
     },
     "implementation": {
-      "title": "Implementation",
-      "description": "Component-driven development with modern frameworks, RxJS, and type-safe APIs. We build scalable solutions that grow with your business."
+      "title": "Development & Implementation",
+      "description": "Full-stack development with modern frameworks and best practices. I build scalable solutions that grow with your business, written with clean, maintainable code."
     },
     "enablement": {
-      "title": "Enablement",
-      "description": "Pair-programming, knowledge transfers, and documentation to keep teams moving. We ensure your team can maintain and extend what we build."
+      "title": "Knowledge Transfer",
+      "description": "I document everything and provide training so you can maintain and extend your application. You own your code, and I make sure you understand it."
     },
     "support": {
       "title": "Support & Maintenance",
-      "description": "Ongoing support to keep your systems running smoothly. Proactive monitoring and quick response times."
+      "description": "Ongoing support to keep your systems running smoothly. Quick response times and proactive monitoring to prevent issues before they happen."
     },
     "promotion": {
-      "headline": "Special Offer: Launch Package",
-      "text": "Get your MVP to market faster with our comprehensive launch package. Includes rapid prototyping, core feature development, and deployment setup—all at a special introductory rate for new clients.",
+      "headline": "Special Offer: MVP Package",
+      "text": "Get your MVP to market faster with my comprehensive package. Includes rapid prototyping, core feature development, and deployment setup—all at a special rate for new clients.",
       "cta": "Learn More"
     },
     "whyChoose": {
-      "headline": "Why Choose Our Services?",
-      "text": "We're not just another development agency. We're your innovation partners, committed to understanding your unique challenges and delivering solutions that drive real business value. Our agile approach means you see progress weekly, not quarterly."
+      "headline": "Why Work With a Solo Developer?",
+      "text": "You get direct access to the person building your solution—no account managers, no project coordinators, just me. I understand your unique challenges and deliver solutions that drive real value. With flexible communication and fast iteration, you see progress weekly, not quarterly."
     },
     "process": {
-      "headline": "Our Process",
-      "text": "We start with discovery to understand your goals, then move quickly through design and development with regular check-ins. Every sprint delivers working software, and every release brings you closer to your vision. No surprises, just results."
+      "headline": "My Process",
+      "text": "We start with a conversation to understand your goals and requirements. Then I move quickly through design and development with regular check-ins. Every milestone delivers working software, and every update brings you closer to your vision. Simple, transparent, and results-focused."
+    }
+  },
+  "contact": {
+    "headline": "Get in Touch",
+    "subheadline": "Have a project in mind? Let's discuss how I can help bring your ideas to life.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "your.email@example.com",
+      "subjectPlaceholder": "What's this about?",
+      "messagePlaceholder": "Tell me about your project..."
+    },
+    "direct": {
+      "headline": "Prefer Direct Contact?",
+      "text": "You can also reach me directly via email. I typically respond within 24 hours.",
+      "email": "Email",
+      "responseTime": "Response time: Usually within 24 hours"
+    },
+    "formErrors": {
+      "required": "This field is required",
+      "email": "Please enter a valid email address",
+      "minlength": "This field is too short",
+      "maxlength": "This field is too long"
+    }
+  },
+  "impress": {
+    "headline": "Impressum",
+    "responsible": "Responsible for Content",
+    "address": "Address",
+    "contact": "Contact",
+    "email": "Email",
+    "phone": "Phone",
+    "liability": {
+      "headline": "Liability for Content",
+      "text": "As a service provider, I am responsible for my own content on these pages according to general law. However, I am not obligated to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity. Obligations to remove or block the use of information under general law remain unaffected."
+    },
+    "copyright": {
+      "headline": "Copyright",
+      "text": "The content and works created by me on these pages are subject to copyright. The duplication, processing, distribution and any kind of exploitation outside the limits of copyright require my written consent. Downloads and copies of this site are only permitted for private, non-commercial use."
+    },
+    "privacy": {
+      "headline": "Privacy",
+      "text": "The use of this website is usually possible without providing personal information. As far as personal data (such as name, address or e-mail addresses) is collected on my pages, this is always done on a voluntary basis as far as possible. This data will not be passed on to third parties without your express consent."
     }
   }
 }
-

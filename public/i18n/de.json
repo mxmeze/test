@@ -9,122 +9,168 @@
     "toggle": "Navigation umschalten"
   },
   "hero": {
-    "kicker": "Innovation beginnt hier",
-    "headline": "Die Zukunft bauen, eine Innovation nach der anderen",
-    "mainText": "Wir sind ein frisches, agiles Team von Innovatoren, die mutige Ideen in die Realität umsetzen. Keine Legacy-Systeme, keine veralteten Prozesse—nur modernste Lösungen, schnell geliefert.",
+    "kicker": "Solo Entwickler",
+    "headline": "Ihre Vision, präzise umgesetzt",
+    "mainText": "Ich bin ein Solo-Entwickler, spezialisiert auf moderne Web-Anwendungen. Kein Overhead, keine Bürokratie—nur direkte Kommunikation, schnelle Lieferung und qualitativ hochwertiger Code. Lassen Sie uns Ihre Ideen in die Realität umsetzen.",
     "cta": "Projekt starten"
   },
   "valueProposition": {
-    "headline": "Warum mit uns arbeiten?",
-    "subheadline": "Wir sind nicht nur Entwickler—wir sind Ihre Innovationspartner",
+    "headline": "Warum mit mir arbeiten?",
+    "subheadline": "Direkter Zugang, persönliche Betreuung und Ergebnisse, die zählen",
     "speed": {
-      "title": "Blitzschnell",
-      "description": "Vom Konzept bis zum Deployment in Wochen, nicht Monaten. Wir bewegen uns in Startup-Geschwindigkeit."
+      "title": "Schnelle Lieferung",
+      "description": "Vom Konzept bis zum Deployment in Wochen, nicht Monaten. Als Solo-Entwickler bewege ich mich schnell und treffe Entscheidungen rasch."
     },
     "quality": {
-      "title": "Enterprise-Qualität",
-      "description": "Gebaut zum Skalieren mit sauberem Code, Best Practices und moderner Architektur."
+      "title": "Qualitativ hochwertiger Code",
+      "description": "Sauberer, wartbarer Code, gebaut mit Best Practices und moderner Architektur. Jede Zeile wird mit Sorgfalt geschrieben."
     },
     "transparency": {
       "title": "Volle Transparenz",
-      "description": "Wöchentliche Updates, offene Kommunikation und keine Überraschungen. Sie sind immer im Bilde."
+      "description": "Direkte Kommunikation, regelmäßige Updates und keine Überraschungen. Sie wissen immer, was mit Ihrem Projekt passiert."
     },
     "partnership": {
-      "title": "Echte Partnerschaft",
-      "description": "Wir investieren in Ihren Erfolg. Ihre Ziele werden unsere Ziele, und wir sind langfristig dabei."
+      "title": "Persönliche Partnerschaft",
+      "description": "Ich investiere in Ihren Erfolg. Ihre Ziele werden meine Ziele, und ich bin verpflichtet, genau das zu liefern, was Sie brauchen."
     }
   },
   "features": {
-    "headline": "Was uns auszeichnet",
-    "subheadline": "Innovation, Geschwindigkeit und Agilität—der neue Weg, Technologie zu entwickeln",
+    "headline": "Was ich biete",
+    "subheadline": "Moderne Entwicklung, persönlicher Service und Ergebnisse, auf die Sie zählen können",
     "rapidPrototyping": {
       "title": "Rapid Prototyping",
-      "description": "Von der Idee zum funktionierenden Prototyp in Tagen, nicht Monaten. Wir bewegen uns schnell und iterieren schnell."
+      "description": "Von der Idee zum funktionierenden Prototyp in Tagen. Ich bewege mich schnell und iteriere schnell, um Ihre Konzepte zu validieren."
     },
     "aiSolutions": {
-      "title": "KI-gestützte Lösungen",
-      "description": "Nutzen Sie modernste KI und maschinelles Lernen, um komplexe Probleme intelligent zu lösen."
+      "title": "KI-Integration",
+      "description": "Nutzen Sie modernste KI und maschinelles Lernen, um komplexe Probleme zu lösen und Ihre Anwendungen zu verbessern."
     },
     "modernStack": {
       "title": "Moderner Tech-Stack",
-      "description": "Gebaut mit den neuesten Technologien und Frameworks für Leistung und Skalierbarkeit."
+      "description": "Gebaut mit den neuesten Technologien und Frameworks für Leistung, Skalierbarkeit und Wartbarkeit."
     },
     "agile": {
       "title": "Agile Entwicklung",
-      "description": "Flexibler, iterativer Ansatz, der sich an Ihre Bedürfnisse anpasst, während sie sich entwickeln."
+      "description": "Flexibler, iterativer Ansatz, der sich an Ihre Bedürfnisse anpasst. Wir passen uns an, während sich die Anforderungen entwickeln."
     },
     "innovationLab": {
-      "title": "Innovationslabor",
-      "description": "Experimentieren Sie mit neuen Technologien, um kreative Lösungen für Ihre Herausforderungen zu finden."
+      "title": "Innovationsfokus",
+      "description": "Ich experimentiere mit neuen Technologien, um kreative Lösungen für Ihre einzigartigen Herausforderungen zu finden."
     },
     "startupFriendly": {
       "title": "Startup-freundlich",
-      "description": "Entwickelt für Startups und Innovatoren, die schnelle Ergebnisse benötigen, ohne das Budget zu sprengen."
+      "description": "Entwickelt für Startups und kleine Unternehmen, die schnelle Ergebnisse benötigen, ohne das Budget zu sprengen."
     }
   },
   "content": {
     "freshPerspective": {
-      "headline": "Frische Perspektive, mutige Ideen",
-      "text": "Als neues Unternehmen sind wir nicht an Legacy-Systeme oder veraltete Denkweisen gebunden. Wir bringen frische Augen zu jeder Herausforderung und haben keine Angst, neue Ansätze zu versuchen. Unser kleines, fokussiertes Team bedeutet, dass Sie direkten Zugang zu den Menschen haben, die Ihre Lösung entwickeln—keine Ebenen, keine Bürokratie, nur Ergebnisse."
+      "headline": "Persönlicher Service, professionelle Ergebnisse",
+      "text": "Als Solo-Entwickler bringe ich eine frische Perspektive zu jedem Projekt. Keine Management-Ebenen, keine Bürokratie—nur direkte Kommunikation und fokussierte Umsetzung. Sie arbeiten direkt mit mir, der Person, die Ihre Lösung entwickelt, und stellen sicher, dass Ihre Vision verstanden und genau so umgesetzt wird, wie Sie es sich vorstellen."
     },
     "builtForInnovators": {
-      "headline": "Von Innovatoren für Innovatoren gebaut",
-      "text": "Wir verstehen, wie es ist, ein Startup oder Innovator zu sein—Sie brauchen Lösungen, die funktionieren, schnell, ohne Enterprise-Overhead. Wir nutzen die neuesten Tools und Technologien, begrüßen Experimente und bewegen uns in der Geschwindigkeit, die Sie brauchen. Jedes Projekt ist eine Gelegenheit, Grenzen zu verschieben und etwas Bemerkenswertes zu schaffen."
+      "headline": "Für Sie gebaut, von jemandem, dem es wichtig ist",
+      "text": "Ich verstehe, wie es ist, Lösungen zu brauchen, die funktionieren, schnell, ohne Enterprise-Overhead. Ich nutze die neuesten Tools und Technologien, bleibe auf dem Laufenden mit Best Practices und bewege mich in der Geschwindigkeit, die Sie brauchen. Jedes Projekt ist persönlich, und ich bin verpflichtet, Ihren Erfolg sicherzustellen."
     }
   },
   "testimonials": {
-    "headline": "Early Adopters lieben uns"
+    "headline": "Was Kunden sagen"
   },
   "cta": {
     "headline": "Bereit, etwas Erstaunliches zu bauen?",
-    "subheadline": "Lassen Sie uns Ihre innovative Idee in die Realität umsetzen. Schnell, flexibel und zukunftsorientiert.",
+    "subheadline": "Lassen Sie uns Ihre Idee in die Realität umsetzen. Schnell, flexibel und fokussiert auf Ihren Erfolg.",
     "button": "Lass uns reden"
   },
   "footer": {
-    "tagline": "Innovation. Geschwindigkeit. Ergebnisse. Die Zukunft bauen, ein Projekt nach dem anderen.",
+    "tagline": "Qualität. Geschwindigkeit. Ergebnisse. Ihre Vision bauen, ein Projekt nach dem anderen.",
     "company": "Unternehmen",
     "legal": "Rechtliches"
   },
   "services": {
     "hero": {
-      "kicker": "Was wir liefern",
-      "headline": "Services für schnelle Produktteams",
-      "mainText": "Wir kombinieren Strategie, UX und Entwicklung. Nutze die Bausteine aus unserer Komponenten-Bibliothek, um Features schneller auszuliefern.",
-      "cta": "Projekt anfragen"
+      "kicker": "Was ich liefern",
+      "headline": "Full-Stack Entwicklungs-Services",
+      "mainText": "Von Frontend bis Backend, ich kümmere mich um alles. Moderne Web-Anwendungen, gebaut mit den neuesten Technologien, schnell geliefert und sorgfältig gewartet.",
+      "cta": "Projekt starten"
     },
     "intro": {
-      "headline": "Umfassende IT-Lösungen",
-      "subheadline": "Von der Konzeption bis zum Deployment—wir haben alles abgedeckt"
+      "headline": "Umfassende Entwicklungs-Services",
+      "subheadline": "Von der Konzeption bis zum Deployment—ich habe alles abgedeckt"
     },
     "consulting": {
-      "title": "Beratung",
-      "description": "Stakeholder ausrichten, KPIs definieren und die Einführung Ihrer nächsten Version planen. Strategische Beratung, um die richtigen Technologieentscheidungen zu treffen."
+      "title": "Technische Beratung",
+      "description": "Erhalten Sie Expertenrat zu Technologieentscheidungen, Architektur und Best Practices. Ich helfe Ihnen, fundierte Entscheidungen zu treffen, die Ihr Projekt zum Erfolg führen."
     },
     "implementation": {
-      "title": "Implementierung",
-      "description": "Komponentengetriebene Entwicklung mit modernen Frameworks, RxJS und typsicheren APIs. Wir bauen skalierbare Lösungen, die mit Ihrem Unternehmen wachsen."
+      "title": "Entwicklung & Implementierung",
+      "description": "Full-Stack Entwicklung mit modernen Frameworks und Best Practices. Ich baue skalierbare Lösungen, die mit Ihrem Unternehmen wachsen, geschrieben mit sauberem, wartbarem Code."
     },
     "enablement": {
-      "title": "Befähigung",
-      "description": "Pair-Programming, Wissenstransfer und Dokumentation, um Teams in Bewegung zu halten. Wir stellen sicher, dass Ihr Team das, was wir bauen, warten und erweitern kann."
+      "title": "Wissenstransfer",
+      "description": "Ich dokumentiere alles und biete Schulungen an, damit Sie Ihre Anwendung warten und erweitern können. Sie besitzen Ihren Code, und ich stelle sicher, dass Sie ihn verstehen."
     },
     "support": {
       "title": "Support & Wartung",
-      "description": "Laufender Support, um Ihre Systeme reibungslos am Laufen zu halten. Proaktives Monitoring und schnelle Reaktionszeiten."
+      "description": "Laufender Support, um Ihre Systeme reibungslos am Laufen zu halten. Schnelle Reaktionszeiten und proaktives Monitoring, um Probleme zu verhindern, bevor sie auftreten."
     },
     "promotion": {
-      "headline": "Sonderangebot: Launch-Paket",
-      "text": "Bringen Sie Ihr MVP schneller auf den Markt mit unserem umfassenden Launch-Paket. Enthält Rapid Prototyping, Kernfunktionsentwicklung und Deployment-Setup—alles zu einem speziellen Einführungspreis für neue Kunden.",
+      "headline": "Sonderangebot: MVP-Paket",
+      "text": "Bringen Sie Ihr MVP schneller auf den Markt mit meinem umfassenden Paket. Enthält Rapid Prototyping, Kernfunktionsentwicklung und Deployment-Setup—alles zu einem speziellen Preis für neue Kunden.",
       "cta": "Mehr erfahren"
     },
     "whyChoose": {
-      "headline": "Warum unsere Services wählen?",
-      "text": "Wir sind nicht nur eine weitere Entwicklungsagentur. Wir sind Ihre Innovationspartner, die sich darauf konzentrieren, Ihre einzigartigen Herausforderungen zu verstehen und Lösungen zu liefern, die echten Geschäftswert schaffen. Unser agiler Ansatz bedeutet, dass Sie wöchentlich Fortschritte sehen, nicht vierteljährlich."
+      "headline": "Warum mit einem Solo-Entwickler arbeiten?",
+      "text": "Sie erhalten direkten Zugang zu der Person, die Ihre Lösung entwickelt—keine Account Manager, keine Projektkoordinatoren, nur ich. Ich verstehe Ihre einzigartigen Herausforderungen und liefern Lösungen, die echten Wert schaffen. Mit flexibler Kommunikation und schneller Iteration sehen Sie wöchentlich Fortschritte, nicht vierteljährlich."
     },
     "process": {
-      "headline": "Unser Prozess",
-      "text": "Wir beginnen mit der Entdeckung, um Ihre Ziele zu verstehen, dann bewegen wir uns schnell durch Design und Entwicklung mit regelmäßigen Check-ins. Jeder Sprint liefert funktionierende Software, und jede Veröffentlichung bringt Sie Ihrer Vision näher. Keine Überraschungen, nur Ergebnisse."
+      "headline": "Mein Prozess",
+      "text": "Wir beginnen mit einem Gespräch, um Ihre Ziele und Anforderungen zu verstehen. Dann bewege ich mich schnell durch Design und Entwicklung mit regelmäßigen Check-ins. Jeder Meilenstein liefert funktionierende Software, und jedes Update bringt Sie Ihrer Vision näher. Einfach, transparent und ergebnisorientiert."
+    }
+  },
+  "contact": {
+    "headline": "Kontakt aufnehmen",
+    "subheadline": "Haben Sie ein Projekt im Kopf? Lassen Sie uns besprechen, wie ich Ihnen helfen kann, Ihre Ideen zu verwirklichen.",
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "subject": "Betreff",
+      "message": "Nachricht",
+      "submit": "Nachricht senden",
+      "namePlaceholder": "Ihr Name",
+      "emailPlaceholder": "ihre.email@beispiel.de",
+      "subjectPlaceholder": "Worum geht es?",
+      "messagePlaceholder": "Erzählen Sie mir von Ihrem Projekt..."
+    },
+    "direct": {
+      "headline": "Direkter Kontakt bevorzugt?",
+      "text": "Sie können mich auch direkt per E-Mail erreichen. Ich antworte normalerweise innerhalb von 24 Stunden.",
+      "email": "E-Mail",
+      "responseTime": "Antwortzeit: Normalerweise innerhalb von 24 Stunden"
+    },
+    "formErrors": {
+      "required": "Dieses Feld ist erforderlich",
+      "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+      "minlength": "Dieses Feld ist zu kurz",
+      "maxlength": "Dieses Feld ist zu lang"
+    }
+  },
+  "impress": {
+    "headline": "Impressum",
+    "responsible": "Verantwortlich für den Inhalt",
+    "address": "Adresse",
+    "contact": "Kontakt",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "liability": {
+      "headline": "Haftung für Inhalte",
+      "text": "Als Diensteanbieter bin ich gemäß allgemeinem Recht für eigene Inhalte auf diesen Seiten verantwortlich. Ich bin jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach allgemeinem Recht bleiben hiervon unberührt."
+    },
+    "copyright": {
+      "headline": "Urheberrecht",
+      "text": "Die von mir erstellten Inhalte und Werke auf diesen Seiten unterliegen dem Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen meiner schriftlichen Zustimmung. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet."
+    },
+    "privacy": {
+      "headline": "Datenschutz",
+      "text": "Die Nutzung dieser Website ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf meinen Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben."
     }
   }
 }
-
