@@ -1,7 +1,6 @@
 import { Component, inject, computed } from '@angular/core';
 import { HeroStage } from '../../components/hero-stage/hero-stage';
 import { TextWithImage } from '../../components/text-with-image/text-with-image';
-import { CtaSection } from '../../components/cta-section/cta-section';
 import { Footer } from '../../components/footer/footer';
 import { DisplayCard } from '../../components/display-card/display-card';
 import { CtaButton } from '../../components/cta-button/cta-button';
@@ -13,7 +12,6 @@ import { TranslationService } from '../../translation.service';
   imports: [
     HeroStage,
     TextWithImage,
-    CtaSection,
     Footer,
     DisplayCard,
     CtaButton,
