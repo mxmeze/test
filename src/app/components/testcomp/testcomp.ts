@@ -5,6 +5,7 @@ import {Testcompitem} from './testcompitem/testcompitem';
 import {Router} from '@angular/router';
 import {LoggerService} from '../../services/logger.service';
 import {environment} from '../../../environments/environment';
+import {take} from 'rxjs';
 
 @Component({
   selector: 'app-testcomp',
