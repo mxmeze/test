@@ -1,7 +1,9 @@
 import {inject, Injectable, signal} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {Observable} from 'rxjs';
+import {Observable, throwError} from 'rxjs';
 import { environment } from '../environments/environment';
+import { LoggerService } from './services/logger.service';
+import { LoginResponse, RegisterResponse } from './models/api.models';
 
 @Injectable({
   providedIn: 'root',
