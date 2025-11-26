@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output, computed } from '@angular/core';
+import { Component, EventEmitter, Input, Output, computed, ChangeDetectionStrategy } from '@angular/core';
 import { CtaButton } from '../cta-button/cta-button';
 
 @Component({
@@ -7,6 +7,7 @@ import { CtaButton } from '../cta-button/cta-button';
   imports: [CtaButton],
   templateUrl: './hero-stage.html',
   styleUrl: './hero-stage.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeroStage {
   @Input() kicker?: string;

@@ -23,15 +23,23 @@ export class TranslationService {
     
     this.currentLanguage.set(initialLang);
     
-    // Load both languages
-    this.loadLanguage('en');
-    this.loadLanguage('de');
+    // Load only the initial language immediately for faster initial load
+    this.loadLanguage(initialLang).then(() => {
+      // Preload the other language in the background
+      const otherLang = initialLang === 'en' ? 'de' : 'en';
+      this.loadLanguage(otherLang).catch(() => {
+        // Silently fail if preload doesn't work
+      });
+    });
 
     // Update loaded translations when language changes
     effect(() => {
       const lang = this.currentLanguage();
       if (this.translations[lang]) {
         this.translationsLoaded.set(this.translations[lang]);
+      } else {
+        // If translations not loaded yet, load them
+        this.loadLanguage(lang);
       }
     });
   }

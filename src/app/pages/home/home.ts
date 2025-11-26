@@ -1,4 +1,4 @@
-import { Component, inject, computed } from '@angular/core';
+import { Component, inject, computed, ChangeDetectionStrategy } from '@angular/core';
 import { HeroStage } from '../../components/hero-stage/hero-stage';
 import { FeaturesSection, Feature } from '../../components/features-section/features-section';
 import { TestimonialsSection, Testimonial } from '../../components/testimonials-section/testimonials-section';
@@ -20,6 +20,7 @@ import { TranslationService } from '../../translation.service';
   standalone: true,
   templateUrl: './home.html',
   styleUrl: './home.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Home {
   private translation = inject(TranslationService);

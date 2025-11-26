@@ -1,4 +1,4 @@
-import { Component, inject, computed } from '@angular/core';
+import { Component, inject, computed, ChangeDetectionStrategy } from '@angular/core';
 import { HeroStage } from '../../components/hero-stage/hero-stage';
 import { TextWithImage } from '../../components/text-with-image/text-with-image';
 import { Footer } from '../../components/footer/footer';
@@ -18,6 +18,7 @@ import { TranslationService } from '../../translation.service';
   ],
   templateUrl: './services.html',
   styleUrl: './services.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Services {
   private translation = inject(TranslationService);
