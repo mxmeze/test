@@ -30,7 +30,6 @@ export class AuthService {
   }
 
   login(username: string, password: string): Observable<Object> {
-    console.log('login', username, password);
     return this.http.post(this.LOGIN_URL, {username, password}, {withCredentials: true});
   }
 
