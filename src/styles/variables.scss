@@ -2,12 +2,12 @@
 @use './theme.config' as theme;
 
 // Typography
-$font-size-base: 16px;
-$font-size-sm: 14px;
-$font-size-lg: 18px;
-$font-size-xl: 24px;
-$font-size-2xl: 30px;
-$font-size-3xl: 36px;
+$font-size-base: 20px;
+$font-size-sm: 18px;
+$font-size-lg: 24px;
+$font-size-xl: 32px;
+$font-size-2xl: 42px;
+$font-size-3xl: 52px;
 
 // Use theme colors - these reference the theme.config.scss file
 $color-surface: theme.$theme-surface;

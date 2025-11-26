@@ -1,3 +1,5 @@
+@use '../../../styles/variables' as vars;
+
 :host {
   display: block;
   position: sticky;
@@ -29,7 +31,7 @@
 }
 
 .nav__brand {
-  font-size: 1.5rem;
+  font-size: vars.$font-size-xl;
   font-weight: 700;
   letter-spacing: -0.01em;
   text-decoration: none;
@@ -49,7 +51,7 @@
   padding: 0.35rem;
   background: transparent;
   border: 1px solid transparent;
-  border-radius: var(--radius-md, 0.35rem);
+  border-radius: vars.$radius-md;
   cursor: pointer;
 
   span {
@@ -77,7 +79,7 @@
   a {
     text-decoration: none;
     color: var(--theme-text-secondary, var(--color-text-muted, #5f6368));
-    font-size: 1.0625rem; // 17px
+    font-size: vars.$font-size-lg;
     font-weight: 600;
     padding: 0.5rem 0;
     position: relative;
@@ -126,10 +128,10 @@
   justify-content: center;
   min-height: 3rem;
   padding: 0 1.75rem;
-  border-radius: var(--radius-lg, 0.75rem);
+  border-radius: vars.$radius-lg;
   border: 2px solid var(--theme-border, var(--color-border-subtle, rgba(60, 64, 67, 0.2)));
   text-decoration: none;
-  font-size: 1rem;
+  font-size: vars.$font-size-base;
   font-weight: 600;
   color: var(--theme-text-primary, var(--color-text-strong, #1f1f1f));
   transition: all 200ms ease;
@@ -193,7 +195,7 @@
     a {
       width: 100%;
       padding: 0.75rem 0;
-      font-size: 1.125rem; // 18px on mobile
+      font-size: vars.$font-size-lg;
     }
   }
 
@@ -206,7 +208,7 @@
     width: 100%;
     justify-content: center;
     min-height: 3.25rem;
-    font-size: 1.0625rem; // 17px on mobile
+    font-size: vars.$font-size-base;
   }
 }
 
@@ -215,15 +217,15 @@
   gap: 0.5rem;
   padding: 0.25rem;
   background: var(--theme-neutral-50, #f9fafb);
-  border-radius: var(--radius-lg, 0.75rem);
+  border-radius: vars.$radius-lg;
 
   button {
     background: transparent;
     border: none;
-    border-radius: var(--radius-md, 0.5rem);
+    border-radius: vars.$radius-md;
     padding: 0.625rem 1rem;
     cursor: pointer;
-    font-size: 0.9375rem; // 15px
+    font-size: vars.$font-size-base;
     font-weight: 600;
     color: var(--theme-text-secondary, var(--color-text-muted, #5f6368));
     transition: all 200ms ease;
