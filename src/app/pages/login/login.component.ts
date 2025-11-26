@@ -19,7 +19,9 @@ export class LoginComponent {
   private logger = inject(LoggerService);
 
   protected submit() {
-    this.auth.login(this.form.value.username, this.form.value.password).subscribe({
+    this.auth.login(this.form.value.username, this.form.value.password)
+      .pipe(take(1))
+      .subscribe({
       next: (res:any)=>{
         // window.location.reload();
         this.auth.setLoggedIn(res.sessionId);

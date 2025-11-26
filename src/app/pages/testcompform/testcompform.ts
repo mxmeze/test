@@ -35,7 +35,9 @@ export class Testcompform {
 
   getData() {
     if(this.isCreate()) {
-      this.http.get(this.BASE_URL + '/' + this.objId).subscribe({
+      this.http.get(this.BASE_URL + '/' + this.objId)
+        .pipe(take(1))
+        .subscribe({
         next: data => {
           this.logger.debug('Test object loaded', data);
           this.form.setValue(data);
@@ -53,15 +55,19 @@ export class Testcompform {
     this.someObject.email = this.form.value.email;
     this.someObject.someNumber = this.form.value.someNumber;
     if(this.isCreate()) {
-      this.http.post(this.BASE_URL + '/create', this.someObject).subscribe({
-        next: () => this.logger.log('Test object created'),
-        error: (err) => this.logger.error('Failed to create test object', err)
-      });
+      this.http.post(this.BASE_URL + '/create', this.someObject)
+        .pipe(take(1))
+        .subscribe({
+          next: () => this.logger.log('Test object created'),
+          error: (err) => this.logger.error('Failed to create test object', err)
+        });
     } else {
-      this.http.patch(this.BASE_URL + '/update', this.someObject).subscribe({
-        next: () => this.logger.log('Test object updated'),
-        error: (err) => this.logger.error('Failed to update test object', err)
-      });
+      this.http.patch(this.BASE_URL + '/update', this.someObject)
+        .pipe(take(1))
+        .subscribe({
+          next: () => this.logger.log('Test object updated'),
+          error: (err) => this.logger.error('Failed to update test object', err)
+        });
     }
 
   }

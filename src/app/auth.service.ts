@@ -1,6 +1,6 @@
 import {inject, Injectable, signal} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {Observable, throwError} from 'rxjs';
+import {Observable, throwError, take} from 'rxjs';
 import { environment } from '../environments/environment';
 import { LoggerService } from './services/logger.service';
 import { LoginResponse, RegisterResponse } from './models/api.models';
@@ -23,14 +23,17 @@ export class AuthService {
   }
 
   checkSession() {
-    this.http.get(this.CHECK_URL, {withCredentials: true}).subscribe({
-      next: response => {
-        this.isLoggedIn.set(true);
-      },
-      error: err => {
-        this.isLoggedIn.set(false);
-      }
-    })
+    this.http.get(this.CHECK_URL, {withCredentials: true})
+      .pipe(take(1))
+      .subscribe({
+        next: response => {
+          this.isLoggedIn.set(true);
+        },
+        error: err => {
+          this.logger.error('Session check failed', err);
+          this.isLoggedIn.set(false);
+        }
+      });
   }
 
   login(username: string, password: string): Observable<LoginResponse> {

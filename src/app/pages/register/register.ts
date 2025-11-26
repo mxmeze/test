@@ -2,6 +2,7 @@ import {Component, inject} from '@angular/core';
 import {FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators} from '@angular/forms';
 import {AuthService} from '../../auth.service';
 import {LoggerService} from '../../services/logger.service';
+import {take} from 'rxjs';
 
 @Component({
   selector: 'app-register',
@@ -21,7 +22,9 @@ export class Register {
   private logger = inject(LoggerService);
 
   submit() {
-    this.auth.register(this.registerForm.value.username, this.registerForm.value.email, this.registerForm.value.password, this.registerForm.value.password_confirmation).subscribe({
+    this.auth.register(this.registerForm.value.username, this.registerForm.value.email, this.registerForm.value.password, this.registerForm.value.password_confirmation)
+      .pipe(take(1))
+      .subscribe({
       next: (res:any)=>{
         this.logger.log('Registration successful');
         this.auth.login(this.registerForm.value.username, this.registerForm.value.password);

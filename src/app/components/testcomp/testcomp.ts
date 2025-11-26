@@ -25,7 +25,9 @@ export class Testcomp implements OnInit{
 
 
   protected doIt() {
-    this.http.get(this.BASE_URL, {withCredentials: true}).subscribe({
+    this.http.get(this.BASE_URL, {withCredentials: true})
+      .pipe(take(1))
+      .subscribe({
       next: data => {
         this.testObjects = [];
         for (let dataKey in data) {
@@ -56,7 +58,9 @@ export class Testcomp implements OnInit{
   }
 
   private delete(object: SomeObject) {
-    this.http.delete(this.BASE_URL + '/delete/' + object.id, {withCredentials: true}).subscribe({
+    this.http.delete(this.BASE_URL + '/delete/' + object.id, {withCredentials: true})
+      .pipe(take(1))
+      .subscribe({
       next : data => {
         this.testObjects = this.testObjects.filter(testObject => testObject.id !== object.id );
         this.logger.debug('Object deleted', object.id);
