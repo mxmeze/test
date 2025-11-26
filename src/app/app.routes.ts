@@ -1,21 +1,41 @@
 import { Routes } from '@angular/router';
-import { LoginComponent } from './pages/login/login.component';
-import { Register } from './pages/register/register';
-import { Home } from './pages/home/home';
-import { Services } from './pages/services/services';
-import { Contact } from './pages/contact/contact';
-import { Impress } from './pages/impress/impress';
-import { Testcompform } from './pages/testcompform/testcompform';
 
 export const routes: Routes = [
-  { path: '', component: Home },
-  { path: 'home', component: Home },
-  { path: 'services', component: Services },
-  { path: 'contact', component: Contact },
-  { path: 'impress', component: Impress },
-  { path: 'login', component: LoginComponent },
-  { path: 'register', component: Register },
-  { path: 'test/:id', component: Testcompform },
-  { path: 'test/create', component: Testcompform },
+  { 
+    path: '', 
+    loadComponent: () => import('./pages/home/home').then(m => m.Home)
+  },
+  { 
+    path: 'home', 
+    loadComponent: () => import('./pages/home/home').then(m => m.Home)
+  },
+  { 
+    path: 'services', 
+    loadComponent: () => import('./pages/services/services').then(m => m.Services)
+  },
+  { 
+    path: 'contact', 
+    loadComponent: () => import('./pages/contact/contact').then(m => m.Contact)
+  },
+  { 
+    path: 'impress', 
+    loadComponent: () => import('./pages/impress/impress').then(m => m.Impress)
+  },
+  { 
+    path: 'login', 
+    loadComponent: () => import('./pages/login/login.component').then(m => m.LoginComponent)
+  },
+  { 
+    path: 'register', 
+    loadComponent: () => import('./pages/register/register').then(m => m.Register)
+  },
+  { 
+    path: 'test/:id', 
+    loadComponent: () => import('./pages/testcompform/testcompform').then(m => m.Testcompform)
+  },
+  { 
+    path: 'test/create', 
+    loadComponent: () => import('./pages/testcompform/testcompform').then(m => m.Testcompform)
+  },
   { path: '**', redirectTo: 'home' },
 ];
