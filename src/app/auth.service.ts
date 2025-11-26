@@ -31,11 +31,11 @@ export class AuthService {
     })
   }
 
-  login(username: string, password: string): Observable<Object> {
-    return this.http.post(this.LOGIN_URL, {username, password}, {withCredentials: true});
+  login(username: string, password: string): Observable<LoginResponse> {
+    return this.http.post<LoginResponse>(this.LOGIN_URL, {username, password}, {withCredentials: true});
   }
 
-  register(username: string, email: string, password: string, passwordConfirm: string): Observable<Object> {
+  register(username: string, email: string, password: string, passwordConfirm: string): Observable<RegisterResponse> {
     if(this.isLoggedIn()){
       this.logger.warn('Attempted registration while already logged in');
       return throwError(() => new Error('Already logged in'));
@@ -44,7 +44,7 @@ export class AuthService {
       this.logger.warn('Password confirmation mismatch');
       return throwError(() => new Error('Passwords do not match'));
     }
-    return this.http.post(this.REGISTER_URL, {username, password, email});
+    return this.http.post<RegisterResponse>(this.REGISTER_URL, {username, password, email});
   }
 
   setLoggedIn(sessionId: string): void {
