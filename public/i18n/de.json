@@ -3,7 +3,7 @@
     "home": "Startseite",
     "services": "Leistungen",
     "contact": "Kontakt",
-    "impress": "Impressum",
+    "impress": "Impressum & Datenschutz",
     "login": "Anmelden",
     "register": "Registrieren",
     "toggle": "Navigation umschalten"
@@ -138,7 +138,9 @@
       "namePlaceholder": "Ihr Name",
       "emailPlaceholder": "ihre.email@beispiel.de",
       "subjectPlaceholder": "Worum geht es?",
-      "messagePlaceholder": "Erzählen Sie mir von Ihrem Projekt..."
+      "messagePlaceholder": "Erzählen Sie mir von Ihrem Projekt...",
+      "privacyConsentText": "Ich stimme der",
+      "privacyLink": "Datenschutzerklärung"
     },
     "direct": {
       "headline": "Direkter Kontakt bevorzugt?",
@@ -169,8 +171,46 @@
       "text": "Die von mir erstellten Inhalte und Werke auf diesen Seiten unterliegen dem Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen meiner schriftlichen Zustimmung. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet."
     },
     "privacy": {
-      "headline": "Datenschutz",
-      "text": "Die Nutzung dieser Website ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf meinen Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben."
+      "headline": "Datenschutzerklärung",
+      "dataCollection": {
+        "headline": "Datenerhebung und -verarbeitung",
+        "text": "Wir erheben und verarbeiten personenbezogene Daten nur in dem Umfang, der für die Bereitstellung unserer Dienste erforderlich ist. Rechtsgrundlage für die Verarbeitung ist Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung) und Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse)."
+      },
+      "contactForm": {
+        "headline": "Kontaktformular",
+        "text": "Wenn Sie uns über das Kontaktformular kontaktieren, erheben wir Ihren Namen, Ihre E-Mail-Adresse, den Betreff und Ihre Nachricht. Diese Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage und zur Beantwortung verwendet. Die Daten werden nach Bearbeitung Ihrer Anfrage gelöscht, es sei denn, gesetzliche Aufbewahrungsfristen erfordern eine längere Speicherung."
+      },
+      "storage": {
+        "headline": "Datenspeicherung",
+        "text": "Wir verwenden localStorage und sessionStorage, um Ihre Spracheinstellung und Sitzungsinformationen zu speichern. Diese Daten werden lokal in Ihrem Browser gespeichert und nicht an unsere Server übertragen. Sie können diese Daten jederzeit löschen, indem Sie den Cache Ihres Browsers leeren."
+      },
+      "cookies": {
+        "headline": "Cookies und lokale Speicherung",
+        "text": "Wir verwenden technisch notwendige Cookies und lokale Speicherung, um die Funktionalität unserer Website sicherzustellen. Dazu gehören Spracheinstellungen und Sitzungsverwaltung. Diese Cookies erfordern keine Einwilligung, da sie für die Funktionsfähigkeit der Website erforderlich sind. Optionale Cookies werden nur mit Ihrer ausdrücklichen Einwilligung gesetzt."
+      },
+      "externalServices": {
+        "headline": "Externe Dienste",
+        "text": "Unsere Website kann Bilder von externen Diensten (z.B. Unsplash) laden. Wenn Sie unsere Website besuchen, kann Ihr Browser eine Verbindung zu diesen Diensten herstellen. Bitte beachten Sie die Datenschutzerklärungen dieser Drittanbieter-Dienste für Informationen über deren Datenverarbeitung."
+      },
+      "rights": {
+        "headline": "Ihre Rechte",
+        "text": "Nach der DSGVO haben Sie folgende Rechte bezüglich Ihrer personenbezogenen Daten:",
+        "access": "Auskunftsrecht (Art. 15 DSGVO): Sie können Auskunft über die von uns verarbeiteten personenbezogenen Daten verlangen.",
+        "rectification": "Recht auf Berichtigung (Art. 16 DSGVO): Sie können die Korrektur unrichtiger Daten verlangen.",
+        "erasure": "Recht auf Löschung (Art. 17 DSGVO): Sie können unter bestimmten Bedingungen die Löschung Ihrer Daten verlangen.",
+        "restriction": "Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO): Sie können unter bestimmten Bedingungen die Einschränkung der Verarbeitung verlangen.",
+        "portability": "Recht auf Datenübertragbarkeit (Art. 20 DSGVO): Sie können die Übertragung Ihrer Daten an einen anderen Diensteanbieter verlangen.",
+        "objection": "Widerspruchsrecht (Art. 21 DSGVO): Sie können der Verarbeitung aufgrund berechtigten Interesses widersprechen.",
+        "complaint": "Beschwerderecht (Art. 77 DSGVO): Sie können bei einer Aufsichtsbehörde Beschwerde einlegen."
+      },
+      "contactDataProtection": "Bei Fragen zum Datenschutz wenden Sie sich bitte an"
     }
+  },
+  "cookieBanner": {
+    "headline": "Cookie-Einwilligung",
+    "text": "Wir verwenden Cookies und ähnliche Technologien, um Ihr Erlebnis zu verbessern. Durch Klicken auf 'Alle akzeptieren' stimmen Sie der Verwendung aller Cookies zu. Sie können auch wählen, nur notwendige Cookies zu akzeptieren. Weitere Informationen finden Sie in unserer",
+    "privacyLink": "Datenschutzerklärung",
+    "acceptAll": "Alle akzeptieren",
+    "acceptNecessary": "Nur notwendige"
   }
 }

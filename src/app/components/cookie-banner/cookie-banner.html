@@ -1,0 +1,24 @@
+@if (isVisible()) {
+  <div class="cookie-banner">
+    <div class="cookie-banner__content">
+      <div class="cookie-banner__text">
+        <h3 class="cookie-banner__headline">{{ texts().headline }}</h3>
+        <p class="cookie-banner__description">
+          {{ texts().text }}
+          <a [routerLink]="['/impress']" class="cookie-banner__link">{{ texts().privacyLink }}</a>
+        </p>
+      </div>
+      <div class="cookie-banner__actions">
+        <app-cta-button
+          [label]="texts().acceptNecessary"
+          variant="secondary"
+          (pressed)="acceptNecessary()"
+        ></app-cta-button>
+        <app-cta-button
+          [label]="texts().acceptAll"
+          (pressed)="acceptAll()"
+        ></app-cta-button>
+      </div>
+    </div>
+  </div>
+}

@@ -33,9 +33,42 @@
         <p class="impress-page__text">{{ texts().copyrightText }}</p>
       </section>
 
-      <section class="impress-page__section">
-        <h2 class="impress-page__section-headline">{{ texts().privacy }}</h2>
-        <p class="impress-page__text">{{ texts().privacyText }}</p>
+      <section class="impress-page__section impress-page__section--privacy">
+        <h2 class="impress-page__section-headline">{{ texts().privacyHeadline }}</h2>
+        
+        <div class="impress-page__privacy-content">
+          <h3 class="impress-page__subsection-headline">{{ texts().dataCollection }}</h3>
+          <p class="impress-page__text">{{ texts().dataCollectionText }}</p>
+
+          <h3 class="impress-page__subsection-headline">{{ texts().contactForm }}</h3>
+          <p class="impress-page__text">{{ texts().contactFormText }}</p>
+
+          <h3 class="impress-page__subsection-headline">{{ texts().storage }}</h3>
+          <p class="impress-page__text">{{ texts().storageText }}</p>
+
+          <h3 class="impress-page__subsection-headline">{{ texts().cookies }}</h3>
+          <p class="impress-page__text">{{ texts().cookiesText }}</p>
+
+          <h3 class="impress-page__subsection-headline">{{ texts().externalServices }}</h3>
+          <p class="impress-page__text">{{ texts().externalServicesText }}</p>
+
+          <h3 class="impress-page__subsection-headline">{{ texts().rights }}</h3>
+          <p class="impress-page__text">{{ texts().rightsText }}</p>
+          <ul class="impress-page__rights-list">
+            <li>{{ texts().rightsList.access }}</li>
+            <li>{{ texts().rightsList.rectification }}</li>
+            <li>{{ texts().rightsList.erasure }}</li>
+            <li>{{ texts().rightsList.restriction }}</li>
+            <li>{{ texts().rightsList.portability }}</li>
+            <li>{{ texts().rightsList.objection }}</li>
+            <li>{{ texts().rightsList.complaint }}</li>
+          </ul>
+
+          <h3 class="impress-page__subsection-headline">{{ texts().contactDataProtection }}</h3>
+          <p class="impress-page__text">
+            {{ texts().contactDataProtection }}: <a href="mailto:contact@example.com">contact@example.com</a>
+          </p>
+        </div>
       </section>
     </div>
   </div>

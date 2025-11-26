@@ -95,6 +95,45 @@
   color: #ef4444;
 }
 
+.contact-form__privacy {
+  display: flex;
+  flex-direction: column;
+  gap: vars.$space-200;
+  margin-top: vars.$space-300;
+}
+
+.contact-form__privacy-label {
+  display: flex;
+  align-items: flex-start;
+  gap: vars.$space-300;
+  cursor: pointer;
+  font-size: vars.$font-size-base;
+}
+
+.contact-form__checkbox {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-top: 0.125rem;
+  cursor: pointer;
+  accent-color: vars.$color-primary;
+  flex-shrink: 0;
+}
+
+.contact-form__privacy-text {
+  color: vars.$color-text-muted;
+  line-height: 1.6;
+}
+
+.contact-form__privacy-link {
+  color: vars.$color-primary;
+  text-decoration: none;
+  font-weight: 600;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .contact-form__action {
   margin-top: vars.$space-300;
 }

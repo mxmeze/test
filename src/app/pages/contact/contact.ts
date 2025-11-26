@@ -1,12 +1,13 @@
 import { Component, inject, computed } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 import { TranslationService } from '../../translation.service';
 import { LoggerService } from '../../services/logger.service';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, RouterLink],
   templateUrl: './contact.html',
   styleUrl: './contact.scss',
 })
@@ -35,6 +36,7 @@ export class Contact {
       Validators.minLength(10),
       Validators.maxLength(1000)
     ]),
+    privacyConsent: new FormControl(false, [Validators.requiredTrue]),
   });
 
   protected readonly texts = computed(() => {
@@ -57,6 +59,8 @@ export class Contact {
       directText: t('contact.direct.text'),
       email: t('contact.direct.email'),
       responseTime: t('contact.direct.responseTime'),
+      privacyConsentText: t('contact.form.privacyConsentText'),
+      privacyLink: t('contact.form.privacyLink'),
       formErrors: {
         required: t('contact.formErrors.required'),
         email: t('contact.formErrors.email'),

@@ -68,6 +68,24 @@
             }
           </div>
 
+          <div class="contact-form__privacy">
+            <label class="contact-form__privacy-label">
+              <input
+                type="checkbox"
+                formControlName="privacyConsent"
+                class="contact-form__checkbox"
+                required
+              />
+              <span class="contact-form__privacy-text">
+                {{ texts().privacyConsentText }}
+                <a [routerLink]="['/impress']" class="contact-form__privacy-link">{{ texts().privacyLink }}</a>
+              </span>
+            </label>
+            @if (contactForm.get('privacyConsent')?.invalid && contactForm.get('privacyConsent')?.touched) {
+              <span class="contact-form__error">{{ texts().formErrors.required }}</span>
+            }
+          </div>
+
           <div class="contact-form__action">
             <button
               type="submit"

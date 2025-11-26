@@ -3,7 +3,7 @@
     "home": "Home",
     "services": "Services",
     "contact": "Contact",
-    "impress": "Impress",
+    "impress": "Impress & Privacy",
     "login": "Login",
     "register": "Register",
     "toggle": "Toggle navigation"
@@ -138,7 +138,9 @@
       "namePlaceholder": "Your name",
       "emailPlaceholder": "your.email@example.com",
       "subjectPlaceholder": "What's this about?",
-      "messagePlaceholder": "Tell me about your project..."
+      "messagePlaceholder": "Tell me about your project...",
+      "privacyConsentText": "I agree to the",
+      "privacyLink": "Privacy Policy"
     },
     "direct": {
       "headline": "Prefer Direct Contact?",
@@ -169,8 +171,46 @@
       "text": "The content and works created by me on these pages are subject to copyright. The duplication, processing, distribution and any kind of exploitation outside the limits of copyright require my written consent. Downloads and copies of this site are only permitted for private, non-commercial use."
     },
     "privacy": {
-      "headline": "Privacy",
-      "text": "The use of this website is usually possible without providing personal information. As far as personal data (such as name, address or e-mail addresses) is collected on my pages, this is always done on a voluntary basis as far as possible. This data will not be passed on to third parties without your express consent."
+      "headline": "Privacy Policy",
+      "dataCollection": {
+        "headline": "Data Collection and Processing",
+        "text": "We collect and process personal data only to the extent necessary for the provision of our services. The legal basis for processing is Art. 6(1)(b) GDPR (contract performance) and Art. 6(1)(f) GDPR (legitimate interest)."
+      },
+      "contactForm": {
+        "headline": "Contact Form",
+        "text": "When you contact us via the contact form, we collect your name, email address, subject, and message. This data is used solely to process your inquiry and respond to you. The data will be deleted after your inquiry has been processed, unless legal retention periods require longer storage."
+      },
+      "storage": {
+        "headline": "Data Storage",
+        "text": "We use localStorage and sessionStorage to store your language preference and session information. This data is stored locally in your browser and is not transmitted to our servers. You can delete this data at any time by clearing your browser's cache."
+      },
+      "cookies": {
+        "headline": "Cookies and Local Storage",
+        "text": "We use technically necessary cookies and local storage to ensure the functionality of our website. These include language preferences and session management. These cookies do not require your consent as they are essential for the website to function. Optional cookies, if used, will only be set with your explicit consent."
+      },
+      "externalServices": {
+        "headline": "External Services",
+        "text": "Our website may load images from external services (e.g., Unsplash). When you visit our website, your browser may establish a connection to these services. Please refer to the privacy policies of these third-party services for information about their data processing practices."
+      },
+      "rights": {
+        "headline": "Your Rights",
+        "text": "Under the GDPR, you have the following rights regarding your personal data:",
+        "access": "Right of access (Art. 15 GDPR): You can request information about the personal data we process about you.",
+        "rectification": "Right to rectification (Art. 16 GDPR): You can request correction of inaccurate data.",
+        "erasure": "Right to erasure (Art. 17 GDPR): You can request deletion of your data under certain conditions.",
+        "restriction": "Right to restriction of processing (Art. 18 GDPR): You can request restriction of processing under certain conditions.",
+        "portability": "Right to data portability (Art. 20 GDPR): You can request transfer of your data to another service provider.",
+        "objection": "Right to object (Art. 21 GDPR): You can object to processing based on legitimate interest.",
+        "complaint": "Right to lodge a complaint (Art. 77 GDPR): You can file a complaint with a supervisory authority."
+      },
+      "contactDataProtection": "For questions regarding data protection, please contact us at"
     }
+  },
+  "cookieBanner": {
+    "headline": "Cookie Consent",
+    "text": "We use cookies and similar technologies to improve your experience. By clicking 'Accept All', you consent to the use of all cookies. You can also choose to accept only necessary cookies. For more information, please read our",
+    "privacyLink": "Privacy Policy",
+    "acceptAll": "Accept All",
+    "acceptNecessary": "Accept Necessary Only"
   }
 }
