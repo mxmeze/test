@@ -1,0 +1,85 @@
+@use '../../../styles/variables' as vars;
+
+.impress-page {
+  padding: calc(vars.$space-500 * 2) vars.$space-400;
+  min-height: calc(100vh - 200px);
+  background: vars.$color-surface;
+
+  @media (min-width: 768px) {
+    padding: calc(vars.$space-600 * 2) vars.$space-500;
+  }
+}
+
+.impress-page__container {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.impress-page__header {
+  margin-bottom: calc(vars.$space-500 * 2);
+  text-align: center;
+}
+
+.impress-page__headline {
+  margin: 0;
+  font-size: vars.$font-size-2xl;
+  font-weight: 700;
+  color: vars.$color-text-strong;
+}
+
+.impress-page__content {
+  display: flex;
+  flex-direction: column;
+  gap: calc(vars.$space-500 * 2);
+}
+
+.impress-page__section {
+  padding: vars.$space-500;
+  background: vars.$color-surface;
+  border-radius: vars.$radius-lg;
+  border: 2px solid vars.$color-border-subtle;
+}
+
+.impress-page__section-headline {
+  margin: 0 0 vars.$space-400;
+  font-size: vars.$font-size-xl;
+  font-weight: 600;
+  color: vars.$color-text-strong;
+}
+
+.impress-page__info {
+  display: flex;
+  flex-direction: column;
+  gap: vars.$space-400;
+}
+
+.impress-page__info-item {
+  margin: 0;
+  font-size: vars.$font-size-base;
+  color: vars.$color-text-strong;
+  line-height: 1.6;
+
+  strong {
+    color: vars.$color-text-strong;
+    font-weight: 600;
+  }
+
+  a {
+    color: vars.$color-primary;
+    text-decoration: none;
+    font-weight: 600;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.impress-page__text {
+  margin: 0;
+  font-size: vars.$font-size-base;
+  color: vars.$color-text-muted;
+  line-height: 1.7;
+}
+

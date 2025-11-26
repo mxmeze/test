@@ -13,6 +13,7 @@ export class AuthService {
   private readonly REGISTER_URL: string = this.BACKEND_URL + '/auth/register';
   private readonly CHECK_URL: string = this.BACKEND_URL + '/test';
   private http: HttpClient = inject(HttpClient);
+  private logger: LoggerService = inject(LoggerService);
   isLoggedIn = signal(true);
 
   constructor() {
@@ -36,12 +37,14 @@ export class AuthService {
 
   register(username: string, email: string, password: string, passwordConfirm: string): Observable<Object> {
     if(this.isLoggedIn()){
-      return new Observable(observer => {console.log('register but logged in')});
+      this.logger.warn('Attempted registration while already logged in');
+      return throwError(() => new Error('Already logged in'));
     }
-    if(password != passwordConfirm){
-      return new Observable(observer => {console.log('password didnt match')});
+    if(password !== passwordConfirm){
+      this.logger.warn('Password confirmation mismatch');
+      return throwError(() => new Error('Passwords do not match'));
     }
-    return this.http.post(this.REGISTER_URL, {username, password, email})
+    return this.http.post(this.REGISTER_URL, {username, password, email});
   }
 
   setLoggedIn(sessionId: string): void {

@@ -3,6 +3,8 @@ import {HttpClient} from '@angular/common/http';
 import {ModelActions, SomeObject} from '../../model';
 import {Testcompitem} from './testcompitem/testcompitem';
 import {Router} from '@angular/router';
+import {LoggerService} from '../../services/logger.service';
+import {environment} from '../../../environments/environment';
 
 @Component({
   selector: 'app-testcomp',
@@ -15,10 +17,11 @@ import {Router} from '@angular/router';
 export class Testcomp implements OnInit{
   isLoading = signal(true);
   testObjects: SomeObject[] = [];
-  BASE_URL = 'http://localhost:8080/test';
+  private readonly BASE_URL = `${environment.apiUrl}/test`;
 
   private http: HttpClient = inject(HttpClient);
   private router: Router = inject(Router);
+  private logger = inject(LoggerService);
 
 
   protected doIt() {
@@ -28,12 +31,13 @@ export class Testcomp implements OnInit{
         for (let dataKey in data) {
           // @ts-ignore
           this.testObjects.push(data[dataKey]);
-          console.log(this.testObjects)
         }
+        this.logger.debug('Test objects loaded', this.testObjects);
         this.isLoading.set(false);
         },
       error: err => {
-        console.log(err);
+        this.logger.error('Failed to load test objects', err);
+        this.isLoading.set(false);
       }
     })
   }
@@ -55,10 +59,10 @@ export class Testcomp implements OnInit{
     this.http.delete(this.BASE_URL + '/delete/' + object.id, {withCredentials: true}).subscribe({
       next : data => {
         this.testObjects = this.testObjects.filter(testObject => testObject.id !== object.id );
-        console.log(this.testObjects);
+        this.logger.debug('Object deleted', object.id);
       },
       error: err => {
-        console.log(err);
+        this.logger.error('Failed to delete object', err);
       }
     })
   }

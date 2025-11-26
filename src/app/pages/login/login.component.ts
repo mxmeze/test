@@ -2,6 +2,7 @@ import {Component, inject} from '@angular/core';
 import {FormControl, FormGroup, ReactiveFormsModule} from '@angular/forms';
 import {AuthService} from '../../auth.service';
 import {Testcomp} from '../../components/testcomp/testcomp';
+import {LoggerService} from '../../services/logger.service';
 
 @Component({
   selector: 'app-login',
@@ -15,6 +16,7 @@ export class LoginComponent {
     password: new FormControl()
   });
   auth: AuthService = inject(AuthService);
+  private logger = inject(LoggerService);
 
   protected submit() {
     this.auth.login(this.form.value.username, this.form.value.password).subscribe({
@@ -23,7 +25,7 @@ export class LoginComponent {
         this.auth.setLoggedIn(res.sessionId);
       },
       error: (error:any)=>{
-        console.log(error.message);
+        this.logger.error('Login failed', error);
       }
     });
   }

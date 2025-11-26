@@ -2,6 +2,8 @@ import {Component, inject, Input} from '@angular/core';
 import {SomeObject} from '../../model';
 import {FormControl, FormGroup} from '@angular/forms';
 import {HttpClient} from '@angular/common/http';
+import {LoggerService} from '../../services/logger.service';
+import {environment} from '../../../environments/environment';
 
 @Component({
   selector: 'app-testcompform',
@@ -18,6 +20,8 @@ export class Testcompform {
     email: new FormControl(),
   });
   private http: HttpClient = inject(HttpClient);
+  private logger = inject(LoggerService);
+  private readonly BASE_URL = `${environment.apiUrl}/test`;
 
 
   constructor() {
@@ -31,9 +35,14 @@ export class Testcompform {
 
   getData() {
     if(this.isCreate()) {
-      this.http.get('http://localhost:8080/test/' + this.objId).subscribe(data => {
-        console.log(data);
-        this.form.setValue(data);
+      this.http.get(this.BASE_URL + '/' + this.objId).subscribe({
+        next: data => {
+          this.logger.debug('Test object loaded', data);
+          this.form.setValue(data);
+        },
+        error: err => {
+          this.logger.error('Failed to load test object', err);
+        }
       });
     }
   }
@@ -44,9 +53,15 @@ export class Testcompform {
     this.someObject.email = this.form.value.email;
     this.someObject.someNumber = this.form.value.someNumber;
     if(this.isCreate()) {
-      this.http.post('http://localhost:8080/test/create', this.someObject).subscribe();
+      this.http.post(this.BASE_URL + '/create', this.someObject).subscribe({
+        next: () => this.logger.log('Test object created'),
+        error: (err) => this.logger.error('Failed to create test object', err)
+      });
     } else {
-      this.http.patch('http://localhost:8080/test/update', this.someObject).subscribe();
+      this.http.patch(this.BASE_URL + '/update', this.someObject).subscribe({
+        next: () => this.logger.log('Test object updated'),
+        error: (err) => this.logger.error('Failed to update test object', err)
+      });
     }
 
   }

@@ -3,4 +3,7 @@ import { appConfig } from './app/app.config';
 import { App } from './app/app';
 
 bootstrapApplication(App, appConfig)
-  .catch((err) => console.error(err));
+  .catch((err) => {
+    // Use console.error here as LoggerService is not available yet
+    console.error('Failed to bootstrap application', err);
+  });

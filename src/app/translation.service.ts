@@ -1,5 +1,6 @@
-import { Injectable, signal, computed, effect } from '@angular/core';
+import { Injectable, signal, computed, effect, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { LoggerService } from './services/logger.service';
 
 export type Language = 'en' | 'de';
 
@@ -11,6 +12,7 @@ export class TranslationService {
   public readonly currentLanguage = signal<Language>('en');
   public readonly translationsLoaded = signal<Record<string, string>>({});
   private loadingPromises: Record<string, Promise<void>> = {};
+  private logger = inject(LoggerService);
   
   constructor(private http: HttpClient) {
     // Try to get language from localStorage or browser
@@ -49,7 +51,7 @@ export class TranslationService {
           resolve();
         },
         error: (err) => {
-          console.error(`Failed to load translations for ${lang}:`, err);
+          this.logger.error(`Failed to load translations for ${lang}`, err);
           // Provide empty translations as fallback
           this.translations[lang] = {};
           if (this.currentLanguage() === lang) {
@@ -106,7 +108,7 @@ export class TranslationService {
     
     // Fallback to key if still not found
     if (!translation) {
-      console.warn(`Translation missing for key: ${key}`);
+      this.logger.warn(`Translation missing for key: ${key}`);
       return key;
     }
     
@@ -133,7 +135,7 @@ export class TranslationService {
       
       // Fallback to key if still not found
       if (!translation) {
-        console.warn(`Translation missing for key: ${key}`);
+        this.logger.warn(`Translation missing for key: ${key}`);
         return key;
       }
       
