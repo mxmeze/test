@@ -1,16 +1,17 @@
 import {inject, Injectable, signal} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {Observable, shareReplay, tap} from 'rxjs';
+import {Observable} from 'rxjs';
+import { environment } from '../environments/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AuthService {
 
-  BACKEND_URL: string = 'http://localhost:8080';
-  LOGIN_URL: string = this.BACKEND_URL + '/auth/login';
-  REGISTER_URL: string = this.BACKEND_URL + '/auth/register';
-  CHECK_URL: string = this.BACKEND_URL + '/test';
+  private readonly BACKEND_URL: string = environment.apiUrl;
+  private readonly LOGIN_URL: string = this.BACKEND_URL + '/auth/login';
+  private readonly REGISTER_URL: string = this.BACKEND_URL + '/auth/register';
+  private readonly CHECK_URL: string = this.BACKEND_URL + '/test';
   private http: HttpClient = inject(HttpClient);
   isLoggedIn = signal(true);
 
